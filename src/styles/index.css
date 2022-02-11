@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.App {
+		@apply h-screen;
+	}
+	body {
+		@apply bg-[#ECECEC];
+	}
+	.table--head {
+		@apply text-dark-purple-neko font-bold text-[14px] px-10 py-[15px] font-roboto;
+		@apply sm:text-[16px];
+	}
+
+	.table--body {
+		@apply text-center text-[0.88rem] font-roboto font-bold pt-5 pl-1;
+		@apply lg:pl-8 lg:text-left;
+	}
+	.table--body:last-child {
+		@apply pr-5;
+	}
+
+	.table--body__coin {
+		@apply text-left text-[0.78rem] text-[#272727] leading-4 w-[180px];
+		@apply lg:pl-0;
+	}
+
+	.table--body__line:last-child {
+		@apply border-b-[24px] border-[transparent];
+	}
+}
