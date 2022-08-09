@@ -1,11 +1,4 @@
-export const MenuOptions = [
-	{ alias: "Cryptocurrency" },
-	{ alias: "NFT" },
-	{
-		alias: "DeFi",
-	},
-	{ alias: "Exchange" },
-	{
-		alias: "Portfolio",
-	},
-];
+import menu from "./menu.json";
+
+type Menu = typeof menu;
+export const MenuOptions: Menu = menu;
