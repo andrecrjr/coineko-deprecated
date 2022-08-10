@@ -38,6 +38,7 @@ export const Table = ({ description, category }: Props) => {
               <td className="table--head px-3 text-left">#</td>
               <td className="table--head pl-[32px]">Coin</td>
               <td className="table--head min-w-[170px]">Price</td>
+              <td className="table--head">1h</td>
               <td className="table--head">24h</td>
               <td className="table--head">7d</td>
               <td className="table--head">Marketcap</td>
@@ -74,7 +75,7 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
         className="table--body text-left max-w-[100px] 
 			text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
       >
-        1
+        {currency.market_cap_rank}
       </td>
       <td className="table--body table--body__coin">
         <section className="grid grid-cols-[auto_1fr] auto-rows-max">
@@ -100,10 +101,37 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
         </section>
       </td>
 
-      <td className="table--body overflow-scroll sm:overflow-auto">U$45.000</td>
-      <td className="table--body text-green-500">+ 25%</td>
-      <td className="table--body text-red-600">- 7%</td>
-      <td className="table--body">1.000.000.000</td>
+      <td className="table--body overflow-scroll sm:overflow-auto">
+        US$ {currency.current_price.toFixed(2)}
+      </td>
+      <td
+        className={`table--body ${
+          currency.price_change_percentage_1h_in_currency > 0
+            ? "text-green-500"
+            : "text-red-600"
+        }`}
+      >
+        {currency.price_change_percentage_1h_in_currency.toFixed(2)} %
+      </td>
+      <td
+        className={`table--body ${
+          currency.market_cap_change_percentage_24h > 0
+            ? "text-green-500"
+            : "text-red-600"
+        }`}
+      >
+        {currency.market_cap_change_percentage_24h.toFixed(2)} %
+      </td>
+      <td
+        className={`table--body  ${
+          currency.price_change_percentage_7d_in_currency > 0
+            ? "text-green-500"
+            : "text-red-600"
+        }`}
+      >
+        {currency.price_change_percentage_7d_in_currency.toFixed(2)} %
+      </td>
+      <td className="table--body">{currency.market_cap.toFixed(2)}</td>
     </tr>
   );
 };
