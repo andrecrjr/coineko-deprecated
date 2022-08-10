@@ -1,24 +1,35 @@
 import { useCallback, useEffect, useState } from "react";
 import Star from "./star.svg?component";
 import Cat from "../../assets/cat.svg?component";
-import { instance } from "../../Services/ApiService";
+import { axiosInstance } from "../../Services/ApiService";
 import { CurrencyList, Currency } from "../../Types";
 interface Props {
   description: string;
-  category?: string;
+  filter?: {
+    vs_currency: string;
+    per_page: string;
+    page: string;
+    sparkline: string;
+    price_change_percentage: string;
+    order: string;
+  };
 }
-export const Table = ({ description, category }: Props) => {
+export const Table = ({ description, filter }: Props) => {
   const [currencyList, setList] = useState<CurrencyList>([]);
-  const fetchService = useCallback(async () => {
-    const { data } = await instance.get(
-      "/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d"
-    );
+  const [page, setPagination] = useState<number>(1);
+  const fetchService = useCallback(async (filterPagination) => {
+    let result;
+    if (filter)
+      result =
+        "?" +
+        new URLSearchParams({ ...filter, ...filterPagination }).toString();
+    const { data } = await axiosInstance.get(`/coins/markets${result}`);
     console.log(data);
     setList(data);
   }, []);
   useEffect(() => {
-    fetchService();
-  }, []);
+    fetchService({ page });
+  }, [page]);
   return (
     <section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0">
       <section className="flex items-center mt-8 w-10/12 mb-2">
@@ -47,7 +58,7 @@ export const Table = ({ description, category }: Props) => {
           <tbody className="border-t-[2px] border-[#B8BAFF]">
             {currencyList.length > 0 &&
               currencyList.map((currency) => (
-                <CurrencyChild currency={currency} />
+                <CurrencyChild key={currency.symbol} currency={currency} />
               ))}
           </tbody>
         </table>
@@ -111,7 +122,9 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
             : "text-red-600"
         }`}
       >
-        {currency.price_change_percentage_1h_in_currency.toFixed(2)} %
+        {currency.price_change_percentage_1h_in_currency &&
+          currency.price_change_percentage_1h_in_currency.toFixed(2)}{" "}
+        %
       </td>
       <td
         className={`table--body ${
@@ -120,7 +133,9 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
             : "text-red-600"
         }`}
       >
-        {currency.market_cap_change_percentage_24h.toFixed(2)} %
+        {currency.market_cap_change_percentage_24h &&
+          currency.market_cap_change_percentage_24h.toFixed(2)}{" "}
+        %
       </td>
       <td
         className={`table--body  ${
@@ -129,7 +144,9 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
             : "text-red-600"
         }`}
       >
-        {currency.price_change_percentage_7d_in_currency.toFixed(2)} %
+        {currency.price_change_percentage_7d_in_currency &&
+          currency.price_change_percentage_7d_in_currency.toFixed(2)}{" "}
+        %
       </td>
       <td className="table--body">{currency.market_cap.toFixed(2)}</td>
     </tr>
