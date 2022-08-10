@@ -23,7 +23,9 @@ export const Table = ({ description, filter }: Props) => {
       result =
         "?" +
         new URLSearchParams({ ...filter, ...filterPagination }).toString();
-    const { data } = await axiosInstance.get(`/coins/markets${result}`);
+    const { data } = await axiosInstance.get(
+      `/coins/markets${result ? result : ""}`
+    );
     console.log(data);
     setList(data);
   }, []);
