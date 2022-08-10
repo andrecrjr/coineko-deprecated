@@ -1,19 +1,31 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Star from "./star.svg?component";
 import Cat from "../../assets/cat.svg?component";
+import { instance } from "../../Services/ApiService";
+import { CurrencyList, Currency } from "../../Types";
 interface Props {
   description: string;
+  category?: string;
 }
-export const Table = ({}: Props) => {
+export const Table = ({ description, category }: Props) => {
+  const [currencyList, setList] = useState<CurrencyList>([]);
+  const fetchService = useCallback(async () => {
+    const { data } = await instance.get(
+      "/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d"
+    );
+    console.log(data);
+    setList(data);
+  }, []);
+  useEffect(() => {
+    fetchService();
+  }, []);
   return (
     <section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0">
       <section className="flex items-center mt-8 w-10/12 mb-2">
         <span>
           <Cat className="w-[35px] h-[35px]" />
         </span>
-        <h3 className="text-xs text-left items-start">
-          Price of cryptocurrency by Markecap
-        </h3>
+        <h3 className="text-xs text-left items-start">{description}</h3>
       </section>
       <section
         className="overflow-x-scroll 
@@ -32,7 +44,10 @@ export const Table = ({}: Props) => {
             </tr>
           </thead>
           <tbody className="border-t-[2px] border-[#B8BAFF]">
-            <CurrencyChild />
+            {currencyList.length > 0 &&
+              currencyList.map((currency) => (
+                <CurrencyChild currency={currency} />
+              ))}
           </tbody>
         </table>
       </section>
@@ -40,7 +55,7 @@ export const Table = ({}: Props) => {
   );
 };
 
-export const CurrencyChild = () => {
+export const CurrencyChild = ({ currency }: { currency: Currency }) => {
   const [Favorite, setFavorite] = useState(false);
   return (
     <tr className="table--body__line pt-4">
@@ -64,7 +79,7 @@ export const CurrencyChild = () => {
       <td className="table--body table--body__coin">
         <section className="grid grid-cols-[auto_1fr] auto-rows-max">
           <img
-            src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"
+            src={`${currency.image.replace("large", "thumb")}`}
             className="mx-auto mt-auto"
             style={{ userSelect: "none" }}
           />
@@ -74,13 +89,13 @@ export const CurrencyChild = () => {
 										 break-words overflow-scroll sm:overflow-hidden"
             style={{ userSelect: "none" }}
           >
-            Bitcoin
+            {currency.name}
           </a>
           <p
             className="text-[10px] text-center 
-					text-dark-purple-neko font-bold max-w-[26px] break-words"
+					text-dark-purple-neko font-bold max-w-[auto] break-words"
           >
-            BTC
+            {currency.symbol.toUpperCase()}
           </p>
         </section>
       </td>
