@@ -1,12 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
 import Star from "./star.svg?component";
-import Cat from "../../assets/cat.svg?component";
-import { axiosInstance } from "../../Services/ApiService";
-import { CurrencyList, Currency } from "../../Types";
+import Cat from "src/assets/cat.svg?component";
+import { axiosInstance } from "src/Services/ApiService";
+import { CurrencyList, Currency } from "src/Types";
+import { formatterMoney } from "src/utils";
+
 interface Props {
   description: string;
   filter?: {
     vs_currency: string;
+    category?: string;
     per_page: string;
     page: string;
     sparkline: string;
@@ -14,52 +17,60 @@ interface Props {
     order: string;
   };
 }
+
 export const Table = ({ description, filter }: Props) => {
   const [currencyList, setList] = useState<CurrencyList>([]);
   const [page, setPagination] = useState<number>(1);
-  const fetchService = useCallback(async (filterPagination) => {
-    let result;
-    if (filter)
-      result =
-        "?" +
-        new URLSearchParams({ ...filter, ...filterPagination }).toString();
-    const { data } = await axiosInstance.get(
-      `/coins/markets${result ? result : ""}`
-    );
-    console.log(data);
-    setList(data);
-  }, []);
+  console.log("entrei");
+  const fetchService = useCallback(
+    async (filterPagination) => {
+      let result;
+      if (filter)
+        result =
+          "?" +
+          new URLSearchParams({ ...filter, ...filterPagination }).toString();
+      const { data } = await axiosInstance.get(
+        `/coins/markets${result ? result : ""}`
+      );
+      console.log(data);
+      setList(data);
+    },
+    [filter]
+  );
   useEffect(() => {
     fetchService({ page });
-  }, [page]);
+  }, [page, filter]);
+
   return (
     <section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0">
-      <section className="flex items-center mt-8 w-10/12 mb-2">
+      <section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10">
         <span>
           <Cat className="w-[35px] h-[35px]" />
         </span>
-        <h3 className="text-xs text-left items-start">{description}</h3>
+        <h3 className="text-xs text-left items-start md:text-base">
+          {description}
+        </h3>
       </section>
       <section
         className="overflow-x-scroll 
 				 sm:overflow-x-auto sm:w-10/12"
       >
-        <table className="bg-[#DEDEDE]  rounded-md table-auto w-full">
+        <table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
           <thead className="">
             <tr>
-              <td className="table--head px-0 w-0 h-0 inline"></td>
+              <td className="table--head px-0 w-5 h-auto"></td>
               <td className="table--head px-3 text-left">#</td>
               <td className="table--head pl-[32px]">Coin</td>
               <td className="table--head min-w-[170px]">Price</td>
               <td className="table--head">1h</td>
               <td className="table--head">24h</td>
               <td className="table--head">7d</td>
-              <td className="table--head">Marketcap</td>
+              <td className="table--head">Market Cap.</td>
             </tr>
           </thead>
           <tbody className="border-t-[2px] border-[#B8BAFF]">
             {currencyList.length > 0 &&
-              currencyList.map((currency) => (
+              currencyList.map((currency: Currency) => (
                 <CurrencyChild key={currency.symbol} currency={currency} />
               ))}
           </tbody>
@@ -96,6 +107,8 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
             src={`${currency.image.replace("large", "thumb")}`}
             className="mx-auto mt-auto"
             style={{ userSelect: "none" }}
+            width="25"
+            height="25"
           />
           <a
             className="row-span-2 w-max flex 
@@ -115,7 +128,14 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
       </td>
 
       <td className="table--body overflow-scroll sm:overflow-auto">
-        US$ {currency.current_price.toFixed(2)}
+        {formatterMoney(
+          "en-US",
+          {
+            style: "currency",
+            currency: "USD",
+          },
+          currency.current_price
+        )}
       </td>
       <td
         className={`table--body ${
@@ -150,7 +170,16 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
           currency.price_change_percentage_7d_in_currency.toFixed(2)}{" "}
         %
       </td>
-      <td className="table--body">{currency.market_cap.toFixed(2)}</td>
+      <td className="table--body">
+        {formatterMoney(
+          "en-US",
+          {
+            style: "currency",
+            currency: "USD",
+          },
+          currency.market_cap
+        )}
+      </td>
     </tr>
   );
 };
