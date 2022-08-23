@@ -1,82 +1,94 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import Star from "./star.svg?component";
 import Cat from "src/assets/cat.svg?component";
 import { axiosInstance } from "src/Services/ApiService";
 import { CurrencyList, Currency } from "src/Types";
 import { formatterMoney } from "src/utils";
+import Pagination from "./Pagination";
+import { FilterGlobalContext, PaginationContext } from "src/Contexts";
 
 interface Props {
   description: string;
-  filter?: {
-    vs_currency: string;
-    category?: string;
-    per_page: string;
-    page: string;
-    sparkline: string;
-    price_change_percentage: string;
-    order: string;
-  };
+  category?: string;
 }
 
-export const Table = ({ description, filter }: Props) => {
+export const Table = ({ description, category }: Props) => {
+  const filter = useContext(FilterGlobalContext);
   const [currencyList, setList] = useState<CurrencyList>([]);
   const [page, setPagination] = useState<number>(1);
-  console.log("entrei");
-  const fetchService = useCallback(
-    async (filterPagination) => {
+  const urlQuery =
+    window.location.search.length > 0 &&
+    parseInt(new URLSearchParams(window.location.search).get("page") || "1");
+
+  const fetchServiceByFilterAndUpdateData = useCallback(
+    async (filterPaginationAndCategory) => {
       let result;
       if (filter)
-        result =
-          "?" +
-          new URLSearchParams({ ...filter, ...filterPagination }).toString();
+        if (filterPaginationAndCategory) {
+          result = new URLSearchParams({
+            ...filter,
+            ...filterPaginationAndCategory,
+          }).toString();
+        }
+      console.log(result);
       const { data } = await axiosInstance.get(
-        `/coins/markets${result ? result : ""}`
+        `/coins/markets?${result ? result : ""}`
       );
-      console.log(data);
       setList(data);
     },
-    [filter]
+    [filter, category]
   );
+
   useEffect(() => {
-    fetchService({ page });
-  }, [page, filter]);
+    if (category) {
+      fetchServiceByFilterAndUpdateData({
+        category,
+        ...{ page: page || urlQuery },
+      });
+    } else {
+      fetchServiceByFilterAndUpdateData({ ...{ page: urlQuery || page } });
+    }
+  }, [page, filter, category, urlQuery]);
 
   return (
-    <section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0">
-      <section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10">
-        <span>
-          <Cat className="w-[35px] h-[35px]" />
-        </span>
-        <h3 className="text-xs text-left items-start md:text-base">
-          {description}
-        </h3>
+    <PaginationContext.Provider value={{ page, setPagination }}>
+      <section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative">
+        <section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 ">
+          <span>
+            <Cat className="w-[35px] h-[35px]" />
+          </span>
+          <h3 className="text-xs text-left items-start md:text-base">
+            {description}
+          </h3>
+        </section>
+        <section
+          className="overflow-x-scroll 
+				 sm:overflow-x-auto sm:w-10/12 mb-10"
+        >
+          <table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
+            <thead className="">
+              <tr>
+                <td className="table--head px-0 w-5 h-auto"></td>
+                <td className="table--head px-3 text-left">#</td>
+                <td className="table--head pl-[32px]">Coin</td>
+                <td className="table--head min-w-[170px]">Price</td>
+                <td className="table--head">1h</td>
+                <td className="table--head">24h</td>
+                <td className="table--head">7d</td>
+                <td className="table--head">Market Cap.</td>
+              </tr>
+            </thead>
+            <tbody className="border-t-[2px] border-[#B8BAFF]">
+              {currencyList.length > 0 &&
+                currencyList.map((currency: Currency) => (
+                  <CurrencyChild key={currency.name} currency={currency} />
+                ))}
+            </tbody>
+          </table>
+          <Pagination />
+        </section>
       </section>
-      <section
-        className="overflow-x-scroll 
-				 sm:overflow-x-auto sm:w-10/12"
-      >
-        <table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
-          <thead className="">
-            <tr>
-              <td className="table--head px-0 w-5 h-auto"></td>
-              <td className="table--head px-3 text-left">#</td>
-              <td className="table--head pl-[32px]">Coin</td>
-              <td className="table--head min-w-[170px]">Price</td>
-              <td className="table--head">1h</td>
-              <td className="table--head">24h</td>
-              <td className="table--head">7d</td>
-              <td className="table--head">Market Cap.</td>
-            </tr>
-          </thead>
-          <tbody className="border-t-[2px] border-[#B8BAFF]">
-            {currencyList.length > 0 &&
-              currencyList.map((currency: Currency) => (
-                <CurrencyChild key={currency.symbol} currency={currency} />
-              ))}
-          </tbody>
-        </table>
-      </section>
-    </section>
+    </PaginationContext.Provider>
   );
 };
 
@@ -145,7 +157,7 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
         }`}
       >
         {currency.price_change_percentage_1h_in_currency &&
-          currency.price_change_percentage_1h_in_currency.toFixed(2)}{" "}
+          currency.price_change_percentage_1h_in_currency.toFixed(2)}
         %
       </td>
       <td
@@ -177,7 +189,7 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
             style: "currency",
             currency: "USD",
           },
-          currency.market_cap
+          currency.market_cap || 0
         )}
       </td>
     </tr>

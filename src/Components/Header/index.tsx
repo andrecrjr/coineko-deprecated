@@ -19,7 +19,7 @@ export const Header = () => {
       >
         <ul className="list-none flex self-center ">
           {MenuOptions.map((item) => (
-            <Link to={item.path}>
+            <Link to={{ pathname: item.path, search: "?page=1" }}>
               <li className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto">
                 {item.alias}
               </li>
