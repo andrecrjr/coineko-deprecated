@@ -6,8 +6,8 @@ export const Header = () => {
   return (
     <header className="flex flex-col items-center">
       <section className="ml-4 py-2 flex w-10/12">
-        <h1 className="text-4xl flex">
-          coinek
+        <h1 className="text-4xl flex" title="coineko">
+          coineko
           <span>
             <Cat className="w-10" />
           </span>
@@ -18,12 +18,14 @@ export const Header = () => {
 			h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
       >
         <ul className="list-none flex self-center ">
-          {MenuOptions.map((item) => (
-            <Link to={{ pathname: item.path, search: "?page=1" }}>
-              <li className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto">
-                {item.alias}
-              </li>
-            </Link>
+          {MenuOptions.map((item, index) => (
+            <div className="contents" key={index}>
+              <Link to={{ pathname: item.path, search: "?page=1" }}>
+                <li className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto">
+                  {item.alias}
+                </li>
+              </Link>
+            </div>
           ))}
         </ul>
       </nav>

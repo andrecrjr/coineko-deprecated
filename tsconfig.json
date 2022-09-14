@@ -18,5 +18,5 @@
 		"types": ["@honkhonk/vite-plugin-svgr/client"],
 		"baseUrl": "."
 	},
-	"include": ["./src"]
+	"include": ["./src", "src/pages", "src/__mocks__"]
 }

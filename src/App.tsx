@@ -6,8 +6,6 @@ import { Routes, Route } from "react-router-dom";
 import { FilterGlobalContext } from "./Contexts";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <FilterGlobalContext.Provider
