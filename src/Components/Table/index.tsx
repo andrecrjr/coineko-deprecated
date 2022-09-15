@@ -30,7 +30,6 @@ export const Table = ({ description, category }: Props) => {
             ...filterPaginationAndCategory,
           }).toString();
         }
-      console.log(result);
       const { data } = await axiosInstance.get(
         `/coins/markets?${result ? result : ""}`
       );
@@ -104,6 +103,7 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
               e.preventDefault();
               setFavorite((state) => !state);
             }}
+            data-testid="favorite-crypto"
           />
         </span>
       </td>

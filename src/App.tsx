@@ -31,7 +31,7 @@ function App() {
               path="nft"
               element={
                 <Table
-                  description="Price of cryptocurrency by Markecap"
+                  description="Price of NFT's cryptocurrency by Market Cap"
                   category={"non-fungible-tokens-nft"}
                 />
               }

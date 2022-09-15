@@ -21,7 +21,10 @@ export const Header = () => {
           {MenuOptions.map((item, index) => (
             <div className="contents" key={index}>
               <Link to={{ pathname: item.path, search: "?page=1" }}>
-                <li className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto">
+                <li
+                  className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+                  data-testid={`button-${item.alias.toLowerCase()}`}
+                >
                   {item.alias}
                 </li>
               </Link>

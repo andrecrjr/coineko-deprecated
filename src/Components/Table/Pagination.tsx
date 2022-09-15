@@ -9,7 +9,6 @@ function Pagination() {
     e.preventDefault();
     if (next) {
       setPagination((oldPage) => oldPage + 1);
-      console.log(page);
     } else {
       setPagination((oldPage) => {
         if (oldPage === 1) return 1;
@@ -25,6 +24,7 @@ function Pagination() {
       {page > 1 ? (
         <MdArrowBackIos
           className="fill-purple-neko cursor-pointer  w-10 text-xl"
+          data-testid="previous-button"
           onClick={(e) => paginationMove(e, false)}
         />
       ) : (
@@ -33,6 +33,7 @@ function Pagination() {
       <span>Page {page}</span>
       <MdArrowForwardIos
         className="fill-purple-neko  cursor-pointer  w-10 text-xl"
+        data-testid="next-button"
         onClick={(e) => paginationMove(e, true)}
       />
     </div>
