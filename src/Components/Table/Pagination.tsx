@@ -11,7 +11,6 @@ function Pagination() {
       setPagination((oldPage) => oldPage + 1);
     } else {
       setPagination((oldPage) => {
-        if (oldPage === 1) return 1;
         return oldPage - 1;
       });
     }
