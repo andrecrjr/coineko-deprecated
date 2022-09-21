@@ -1,12 +1,12 @@
 const styleCurrency = {
-  style: "currency",
-  currency: "USD",
+	style: 'currency',
+	currency: 'USD',
 };
 
 export const formatterMoney = (
-  language: string = "en-US",
-  currency: typeof styleCurrency,
-  amount: number
+	language = 'en-US',
+	currency: typeof styleCurrency,
+	amount: number
 ) => {
-  return new Intl.NumberFormat(language, currency).format(amount);
+	return new Intl.NumberFormat(language, currency).format(amount);
 };

@@ -1,104 +1,104 @@
 import {
-  render,
-  screen,
-  RenderResult,
-  fireEvent,
-} from "@testing-library/react";
-import App from "../../App";
-import { describe, expect, beforeEach, vi, it } from "vitest";
-import cryptoListMock from "../../__mocks__/cryptocurrency.mock.json";
-import cryptoListMockPageTwo from "../../__mocks__/cryptocurrencyPageTwo.mock.json";
-import cryptoNftListMockPageOne from "../../__mocks__/nftPageOneMock.mock.json";
+	render,
+	screen,
+	RenderResult,
+	fireEvent,
+} from '@testing-library/react';
+import App from '../../App';
+import { describe, expect, beforeEach, vi, it } from 'vitest';
+import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
+import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
+import cryptoNftListMockPageOne from '../../__mocks__/nftPageOneMock.mock.json';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));
 
-vi.mock("axios", async () => {
-  const create = vi.fn().mockImplementation((createUrl) => {
-    return {
-      get: vi.fn().mockImplementation((url) => {
-        let apiFilterUrl = createUrl.baseURL + url;
-        if (
-          apiFilterUrl.includes(
-            "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d"
-          )
-        ) {
-          if (apiFilterUrl.includes("&category=non-fungible"))
-            return { data: cryptoNftListMockPageOne };
+vi.mock('axios', async () => {
+	const create = vi.fn().mockImplementation((createUrl) => {
+		return {
+			get: vi.fn().mockImplementation((url) => {
+				const apiFilterUrl = createUrl.baseURL + url;
+				if (
+					apiFilterUrl.includes(
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
+					)
+				) {
+					if (apiFilterUrl.includes('&category=non-fungible'))
+						return { data: cryptoNftListMockPageOne };
 
-          return { data: cryptoListMock };
-        } else {
-          return { data: cryptoListMockPageTwo };
-        }
-      }),
-    };
-  });
+					return { data: cryptoListMock };
+				} else {
+					return { data: cryptoListMockPageTwo };
+				}
+			}),
+		};
+	});
 
-  return { default: { create } };
+	return { default: { create } };
 });
 
-describe("Main App test", () => {
-  let mainApp: RenderResult;
+describe('Main App test', () => {
+	let mainApp: RenderResult;
 
-  beforeEach(() => {
-    mainApp = render(<App />);
-  });
+	beforeEach(() => {
+		mainApp = render(<App />);
+	});
 
-  it("should show title", () => {
-    expect(screen.getByText(/coineko/i)).toBeDefined();
-  });
+	it('should show title', () => {
+		expect(screen.getByText(/coineko/i)).toBeDefined();
+	});
 
-  it("should list one crypto", async () => {
-    expect((await screen.findByText("Bitcoin")).textContent).toBe("Bitcoin");
-    expect((await screen.findByText("BTC")).textContent).toBe("BTC");
-    expect((await screen.findByText("BTC")).textContent).not.toBe("ETH");
-    expect(
-      (await screen.findByText("$67,916,847,953.00")).textContent
-    ).toBeDefined();
-  });
+	it('should list one crypto', async () => {
+		expect((await screen.findByText('Bitcoin')).textContent).toBe('Bitcoin');
+		expect((await screen.findByText('BTC')).textContent).toBe('BTC');
+		expect((await screen.findByText('BTC')).textContent).not.toBe('ETH');
+		expect(
+			(await screen.findByText('$67,916,847,953.00')).textContent
+		).toBeDefined();
+	});
 
-  it("should snap all cryptos in home", () => {
-    expect(mainApp.container.children[0]).toMatchSnapshot();
-  });
+	it('should snap all cryptos in home', () => {
+		expect(mainApp.container.children[0]).toMatchSnapshot();
+	});
 
-  it("should go to page two", async () => {
-    const buttonNextPage = await screen.findByTestId("next-button");
-    fireEvent.click(buttonNextPage);
-    const thetaPageTwo = await screen.findByText(/Theta Network/i);
-    const kusamaPageTwo = await screen.findByText(/Kusama/i);
-    const ksmPageTwo = await screen.findByText(/KSM/i);
-    expect(thetaPageTwo.textContent).toBe("Theta Network");
-    expect(kusamaPageTwo.textContent).toBe("Kusama");
-    expect(ksmPageTwo.textContent).toBe("KSM");
-  });
+	it('should go to page two', async () => {
+		const buttonNextPage = await screen.findByTestId('next-button');
+		fireEvent.click(buttonNextPage);
+		const thetaPageTwo = await screen.findByText(/Theta Network/i);
+		const kusamaPageTwo = await screen.findByText(/Kusama/i);
+		const ksmPageTwo = await screen.findByText(/KSM/i);
+		expect(thetaPageTwo.textContent).toBe('Theta Network');
+		expect(kusamaPageTwo.textContent).toBe('Kusama');
+		expect(ksmPageTwo.textContent).toBe('KSM');
+	});
 
-  it("should go to page one from page two", async () => {
-    const buttonNextPage = await screen.findByTestId("next-button");
-    fireEvent.click(buttonNextPage);
-    const previousPage = await screen.findByTestId("previous-button");
-    fireEvent.click(previousPage);
-    const bitcoinPageOne = await screen.findByText("Bitcoin");
-    expect(bitcoinPageOne.textContent).toBe("Bitcoin");
-  });
+	it('should go to page one from page two', async () => {
+		const buttonNextPage = await screen.findByTestId('next-button');
+		fireEvent.click(buttonNextPage);
+		const previousPage = await screen.findByTestId('previous-button');
+		fireEvent.click(previousPage);
+		const bitcoinPageOne = await screen.findByText('Bitcoin');
+		expect(bitcoinPageOne.textContent).toBe('Bitcoin');
+	});
 
-  it("should go to another category page", async () => {
-    const nftButton = await screen.findByTestId("button-nft");
-    fireEvent.click(nftButton);
-    const nftPage = await screen.findByText(
-      "Price of NFT's cryptocurrency by Market Cap"
-    );
-    const flowPage = await screen.findByText("Flow");
-    const apePage = await screen.findByText("ApeCoin");
-    expect(nftPage.textContent).toBe(
-      "Price of NFT's cryptocurrency by Market Cap"
-    );
-    expect(flowPage.textContent).toBe("Flow");
-    expect(apePage.textContent).toBe("ApeCoin");
-  });
+	it('should go to another category page', async () => {
+		const nftButton = await screen.findByTestId('button-nft');
+		fireEvent.click(nftButton);
+		const nftPage = await screen.findByText(
+			'Price of NFT\'s cryptocurrency by Market Cap'
+		);
+		const flowPage = await screen.findByText('Flow');
+		const apePage = await screen.findByText('ApeCoin');
+		expect(nftPage.textContent).toBe(
+			'Price of NFT\'s cryptocurrency by Market Cap'
+		);
+		expect(flowPage.textContent).toBe('Flow');
+		expect(apePage.textContent).toBe('ApeCoin');
+	});
 
-  it("should favorite a currency", async () => {
-    const buttonApp = await screen.findAllByTestId("favorite-crypto");
-    fireEvent.click(buttonApp[0]);
-    expect(buttonApp[0].classList.contains("fill-purple-neko")).toBeTruthy();
-    expect(buttonApp[0].classList.contains("fill-none")).toBeFalsy();
-  });
+	it('should favorite a currency', async () => {
+		const buttonApp = await screen.findAllByTestId('favorite-crypto');
+		fireEvent.click(buttonApp[0]);
+		expect(buttonApp[0].classList.contains('fill-purple-neko')).toBeTruthy();
+		expect(buttonApp[0].classList.contains('fill-none')).toBeFalsy();
+	});
 });
