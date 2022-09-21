@@ -8,8 +8,8 @@ import Pagination from './Pagination';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';
 
 interface Props {
-  description: string;
-  category?: string;
+	description: string;
+	category?: string;
 }
 
 export const Table = ({ description, category }: Props) => {
@@ -17,8 +17,10 @@ export const Table = ({ description, category }: Props) => {
 	const [currencyList, setList] = useState<CurrencyList>([]);
 	const [page, setPagination] = useState<number>(1);
 	const urlQuery =
-    window.location.search.length > 0 &&
-    parseInt(new URLSearchParams(window.location.search).get('page') || '1');
+		window.location.search.length > 0 &&
+		parseInt(
+			new URLSearchParams(window.location.search).get('page') || '1'
+		);
 
 	const fetchServiceByFilterAndUpdateData = useCallback(
 		async (filterPaginationAndCategory) => {
@@ -27,7 +29,7 @@ export const Table = ({ description, category }: Props) => {
 				if (filterPaginationAndCategory) {
 					result = new URLSearchParams({
 						...filter,
-						...filterPaginationAndCategory,
+						...filterPaginationAndCategory
 					}).toString();
 				}
 			const { data } = await axiosInstance.get(
@@ -42,10 +44,12 @@ export const Table = ({ description, category }: Props) => {
 		if (category) {
 			fetchServiceByFilterAndUpdateData({
 				category,
-				...{ page: page || urlQuery },
+				...{ page: page || urlQuery }
 			});
 		} else {
-			fetchServiceByFilterAndUpdateData({ ...{ page: urlQuery || page } });
+			fetchServiceByFilterAndUpdateData({
+				...{ page: urlQuery || page }
+			});
 		}
 	}, [page, filter, category, urlQuery]);
 
@@ -68,20 +72,43 @@ export const Table = ({ description, category }: Props) => {
 						<thead className="">
 							<tr>
 								<td className="table--head px-0 w-5 h-auto"></td>
-								<td className="table--head px-3 text-left">#</td>
-								<td className="table--head pl-[32px]">Coin</td>
-								<td className="table--head min-w-[170px]">Price</td>
-								<td className="table--head">1h</td>
-								<td className="table--head">24h</td>
-								<td className="table--head">7d</td>
-								<td className="table--head">Market Cap.</td>
+								<td className="table--head px-3 text-left">
+									#
+								</td>
+								<td className="table--head pl-[32px]">
+									Coin
+								</td>
+								<td className="table--head min-w-[170px]">
+									Price
+								</td>
+								<td className="table--head">
+									1h
+								</td>
+								<td className="table--head">
+									24h
+								</td>
+								<td className="table--head">
+									7d
+								</td>
+								<td className="table--head">
+									Market Cap.
+								</td>
 							</tr>
 						</thead>
 						<tbody className="border-t-[2px] border-[#B8BAFF]">
 							{currencyList.length > 0 &&
-                currencyList.map((currency: Currency) => (
-                	<CurrencyChild key={currency.name} currency={currency} />
-                ))}
+								currencyList.map(
+									(currency: Currency) => (
+										<CurrencyChild
+											key={
+												currency.name
+											}
+											currency={
+												currency
+											}
+										/>
+									)
+								)}
 						</tbody>
 					</table>
 					<Pagination />
@@ -98,7 +125,11 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 			<td className="table--body w-[35px] mr-15">
 				<span>
 					<Star
-						className={`w-5 ${Favorite ? 'fill-purple-neko' : 'fill-[none]'}`}
+						className={`w-5 ${
+							Favorite
+								? 'fill-purple-neko'
+								: 'fill-[none]'
+						}`}
 						onClick={(e) => {
 							e.preventDefault();
 							setFavorite((state) => !state);
@@ -116,7 +147,10 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 			<td className="table--body table--body__coin">
 				<section className="grid grid-cols-[auto_1fr] auto-rows-max">
 					<img
-						src={`${currency.image.replace('large', 'thumb')}`}
+						src={`${currency.image.replace(
+							'large',
+							'thumb'
+						)}`}
 						className="mx-auto mt-auto"
 						style={{ userSelect: 'none' }}
 						width="25"
@@ -144,21 +178,24 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 					'en-US',
 					{
 						style: 'currency',
-						currency: 'USD',
+						currency: 'USD'
 					},
 					currency.current_price
 				)}
 			</td>
 			<td
 				className={`table--body ${
-					currency.price_change_percentage_1h_in_currency > 0
+					currency.price_change_percentage_1h_in_currency >
+					0
 						? 'text-green-500'
 						: 'text-red-600'
 				}`}
 			>
 				{currency.price_change_percentage_1h_in_currency &&
-          currency.price_change_percentage_1h_in_currency.toFixed(2)}
-        %
+					currency.price_change_percentage_1h_in_currency.toFixed(
+						2
+					)}
+				%
 			</td>
 			<td
 				className={`table--body ${
@@ -168,26 +205,31 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 				}`}
 			>
 				{currency.market_cap_change_percentage_24h &&
-          currency.market_cap_change_percentage_24h.toFixed(2)}{' '}
-        %
+					currency.market_cap_change_percentage_24h.toFixed(
+						2
+					)}{' '}
+				%
 			</td>
 			<td
 				className={`table--body  ${
-					currency.price_change_percentage_7d_in_currency > 0
+					currency.price_change_percentage_7d_in_currency >
+					0
 						? 'text-green-500'
 						: 'text-red-600'
 				}`}
 			>
 				{currency.price_change_percentage_7d_in_currency &&
-          currency.price_change_percentage_7d_in_currency.toFixed(2)}{' '}
-        %
+					currency.price_change_percentage_7d_in_currency.toFixed(
+						2
+					)}{' '}
+				%
 			</td>
 			<td className="table--body">
 				{formatterMoney(
 					'en-US',
 					{
 						style: 'currency',
-						currency: 'USD',
+						currency: 'USD'
 					},
 					currency.market_cap || 0
 				)}

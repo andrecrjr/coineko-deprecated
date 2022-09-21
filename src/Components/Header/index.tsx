@@ -7,7 +7,7 @@ export const Header = () => {
 		<header className="flex flex-col items-center">
 			<section className="ml-4 py-2 flex w-10/12">
 				<h1 className="text-4xl flex" title="coineko">
-          coineko
+					coineko
 					<span>
 						<Cat className="w-10" />
 					</span>
@@ -20,7 +20,12 @@ export const Header = () => {
 				<ul className="list-none flex self-center ">
 					{MenuOptions.map((item, index) => (
 						<div className="contents" key={index}>
-							<Link to={{ pathname: item.path, search: '?page=1' }}>
+							<Link
+								to={{
+									pathname: item.path,
+									search: '?page=1'
+								}}
+							>
 								<li
 									className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
 									data-testid={`button-${item.alias.toLowerCase()}`}

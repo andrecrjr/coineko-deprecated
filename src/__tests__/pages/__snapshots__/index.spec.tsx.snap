@@ -42,7 +42,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
       </h1>
     </section>
     <nav
-      class="w-full bg-purple-neko overflow-x-scroll  h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
+      class="w-full bg-purple-neko overflow-x-scroll 
+ h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
     >
       <ul
         class="list-none flex self-center "
@@ -157,7 +158,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
       </h3>
     </section>
     <section
-      class="overflow-x-scroll  sm:overflow-x-auto sm:w-10/12 mb-10"
+      class="overflow-x-scroll 
+ sm:overflow-x-auto sm:w-10/12 mb-10"
     >
       <table
         class="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen"
@@ -234,7 +236,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               1
             </td>
@@ -252,13 +255,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Bitcoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   BTC
                 </p>
@@ -320,7 +326,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               2
             </td>
@@ -338,13 +345,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Ethereum
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ETH
                 </p>
@@ -406,7 +416,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               3
             </td>
@@ -424,13 +435,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Tether
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   USDT
                 </p>
@@ -492,7 +506,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               4
             </td>
@@ -510,13 +525,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   USD Coin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   USDC
                 </p>
@@ -578,7 +596,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               5
             </td>
@@ -596,13 +615,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   BNB
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   BNB
                 </p>
@@ -664,7 +686,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               6
             </td>
@@ -682,13 +705,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Binance USD
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   BUSD
                 </p>
@@ -750,7 +776,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               7
             </td>
@@ -768,13 +795,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   XRP
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   XRP
                 </p>
@@ -836,7 +866,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               8
             </td>
@@ -854,13 +885,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Cardano
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ADA
                 </p>
@@ -922,7 +956,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               9
             </td>
@@ -940,13 +975,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Solana
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   SOL
                 </p>
@@ -1008,7 +1046,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               10
             </td>
@@ -1026,13 +1065,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Polkadot
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   DOT
                 </p>
@@ -1094,7 +1136,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               11
             </td>
@@ -1112,13 +1155,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Dogecoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   DOGE
                 </p>
@@ -1180,7 +1226,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               12
             </td>
@@ -1198,13 +1245,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Shiba Inu
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   SHIB
                 </p>
@@ -1266,7 +1316,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               13
             </td>
@@ -1284,13 +1335,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Lido Staked Ether
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   STETH
                 </p>
@@ -1352,7 +1406,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               14
             </td>
@@ -1370,13 +1425,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Dai
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   DAI
                 </p>
@@ -1438,7 +1496,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               15
             </td>
@@ -1456,13 +1515,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Polygon
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   MATIC
                 </p>
@@ -1524,7 +1586,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               16
             </td>
@@ -1542,13 +1605,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   TRON
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   TRX
                 </p>
@@ -1610,7 +1676,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               17
             </td>
@@ -1628,13 +1695,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Avalanche
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   AVAX
                 </p>
@@ -1696,7 +1766,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               18
             </td>
@@ -1714,13 +1785,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Wrapped Bitcoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   WBTC
                 </p>
@@ -1782,7 +1856,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               19
             </td>
@@ -1800,13 +1875,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Ethereum Classic
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ETC
                 </p>
@@ -1868,7 +1946,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               20
             </td>
@@ -1886,13 +1965,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Uniswap
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   UNI
                 </p>
@@ -1954,7 +2036,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               21
             </td>
@@ -1972,13 +2055,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   LEO Token
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   LEO
                 </p>
@@ -2040,7 +2126,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               22
             </td>
@@ -2058,13 +2145,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Litecoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   LTC
                 </p>
@@ -2126,7 +2216,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               23
             </td>
@@ -2144,13 +2235,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Cosmos Hub
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ATOM
                 </p>
@@ -2212,7 +2306,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               24
             </td>
@@ -2230,13 +2325,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   OKB
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   OKB
                 </p>
@@ -2298,7 +2396,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               25
             </td>
@@ -2316,13 +2415,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   NEAR Protocol
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   NEAR
                 </p>
@@ -2384,7 +2486,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               26
             </td>
@@ -2402,13 +2505,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   FTX
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   FTT
                 </p>
@@ -2470,7 +2576,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               27
             </td>
@@ -2488,13 +2595,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Chainlink
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   LINK
                 </p>
@@ -2556,7 +2666,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               28
             </td>
@@ -2574,13 +2685,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Cronos
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   CRO
                 </p>
@@ -2642,7 +2756,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               29
             </td>
@@ -2660,13 +2775,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Stellar
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   XLM
                 </p>
@@ -2728,7 +2846,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               30
             </td>
@@ -2746,13 +2865,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Monero
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   XMR
                 </p>
@@ -2814,7 +2936,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               31
             </td>
@@ -2832,13 +2955,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Terra Luna Classic
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   LUNC
                 </p>
@@ -2900,7 +3026,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               32
             </td>
@@ -2918,13 +3045,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Bitcoin Cash
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   BCH
                 </p>
@@ -2986,7 +3116,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               33
             </td>
@@ -3004,13 +3135,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Algorand
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ALGO
                 </p>
@@ -3072,7 +3206,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               34
             </td>
@@ -3090,13 +3225,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Flow
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   FLOW
                 </p>
@@ -3158,7 +3296,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               35
             </td>
@@ -3176,13 +3315,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   VeChain
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   VET
                 </p>
@@ -3244,7 +3386,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               36
             </td>
@@ -3262,13 +3405,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Internet Computer
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   ICP
                 </p>
@@ -3330,7 +3476,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               37
             </td>
@@ -3348,13 +3495,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Filecoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   FIL
                 </p>
@@ -3416,7 +3566,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               38
             </td>
@@ -3434,13 +3585,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   ApeCoin
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   APE
                 </p>
@@ -3502,7 +3656,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               39
             </td>
@@ -3520,13 +3675,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Hedera
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   HBAR
                 </p>
@@ -3588,7 +3746,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               40
             </td>
@@ -3606,13 +3765,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   EOS
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   EOS
                 </p>
@@ -3674,7 +3836,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               41
             </td>
@@ -3692,13 +3855,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Chain
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   XCN
                 </p>
@@ -3760,7 +3926,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               42
             </td>
@@ -3778,13 +3945,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Frax
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   FRAX
                 </p>
@@ -3846,7 +4016,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               43
             </td>
@@ -3864,13 +4035,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Tezos
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   XTZ
                 </p>
@@ -3932,7 +4106,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               44
             </td>
@@ -3950,13 +4125,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Quant
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   QNT
                 </p>
@@ -4018,7 +4196,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               45
             </td>
@@ -4036,13 +4215,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Decentraland
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   MANA
                 </p>
@@ -4104,7 +4286,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               46
             </td>
@@ -4122,13 +4305,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   The Sandbox
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   SAND
                 </p>
@@ -4190,7 +4376,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               47
             </td>
@@ -4208,13 +4395,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Axie Infinity
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   AXS
                 </p>
@@ -4276,7 +4466,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               48
             </td>
@@ -4294,13 +4485,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Aave
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   AAVE
                 </p>
@@ -4362,7 +4556,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               49
             </td>
@@ -4380,13 +4575,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Lido DAO
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   LDO
                 </p>
@@ -4448,7 +4646,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               </span>
             </td>
             <td
-              class="table--body text-left max-w-[100px]  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+              class="table--body text-left max-w-[100px] 
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
             >
               50
             </td>
@@ -4466,13 +4665,16 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                   width="25"
                 />
                 <a
-                  class="row-span-2 w-max flex  items-center pl-3 max-w-[150px] font-bold  break-words overflow-scroll sm:overflow-hidden"
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
                   style="user-select: none;"
                 >
                   Elrond
                 </a>
                 <p
-                  class="text-[10px] text-center  text-dark-purple-neko font-bold max-w-[auto] break-words"
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
                 >
                   EGLD
                 </p>

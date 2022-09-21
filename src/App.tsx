@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Header } from './Components/Header';
 import { Table } from './Components/Table';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -15,7 +14,7 @@ function App() {
 					per_page: '50',
 					sparkline: 'false',
 					page: 1,
-					price_change_percentage: '1h,24h,7d',
+					price_change_percentage: '1h,24h,7d'
 				}}
 			>
 				<div className="App">
