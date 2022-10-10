@@ -15,16 +15,16 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm install
-      - run: npm run test && npm run build
+          cache: "yarn"
+      - run: yarn install
+      - run: yarn test && yarn build
       - run: cp ./dist/index.html ./dist/200.html
       - name: Deploy to coineko surge
         uses: dswistowski/surge-sh-action@v1
