@@ -39,7 +39,7 @@ function App() {
 							path="de-fi"
 							element={
 								<Table
-									description="Ranking of De-Fi price by Market Capitalization."
+									description="Ranking of De-Fi prices by Market Capitalization."
 									category={'decentralized-finance-defi'}
 								/>
 							}
@@ -48,7 +48,7 @@ function App() {
 							path="exchange"
 							element={
 								<Table
-									description="Price of cryptocurrency's exchange by Market Capitalization."
+									description="Price of cryptocurrencies exchange by Market Capitalization."
 									category={'exchange-based-tokens'}
 								/>
 							}
