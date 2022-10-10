@@ -23,14 +23,14 @@ function App() {
 						<Route
 							path="/"
 							element={
-								<Table description="Price of the meow main cryptocurrencies by Market capitalization!" />
+								<Table description="Price of the main cryptocurrencies by Market Capitalization." />
 							}
 						/>
 						<Route
 							path="nft"
 							element={
 								<Table
-									description="Price of NFT's cryptocurrency by Market Cap"
+									description="Ranking of NFT's price by Market Capitalization."
 									category={'non-fungible-tokens-nft'}
 								/>
 							}
@@ -39,7 +39,7 @@ function App() {
 							path="de-fi"
 							element={
 								<Table
-									description="Price of cryptocurrency De-Fis by Market Capitalization"
+									description="De-Fis price Ranking by Market Capitalization."
 									category={'decentralized-finance-defi'}
 								/>
 							}
@@ -48,7 +48,7 @@ function App() {
 							path="exchange"
 							element={
 								<Table
-									description="Price of cryptocurrency's exchange by Market Capitalization"
+									description="Price of cryptocurrency's exchange by Market Capitalization."
 									category={'exchange-based-tokens'}
 								/>
 							}
