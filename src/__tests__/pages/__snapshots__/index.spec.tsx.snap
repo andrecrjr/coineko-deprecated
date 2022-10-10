@@ -154,7 +154,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
       <h3
         class="text-xs text-left items-start md:text-base"
       >
-        Price of the meow main cryptocurrencies by Market capitalization!
+        Price of the main cryptocurrencies by Market Capitalization.
       </h3>
     </section>
     <section

@@ -30,7 +30,7 @@ function App() {
 							path="nft"
 							element={
 								<Table
-									description="Ranking of NFT's price by Market Capitalization."
+									description="Ranking of NFT price by Market Capitalization."
 									category={'non-fungible-tokens-nft'}
 								/>
 							}
@@ -39,7 +39,7 @@ function App() {
 							path="de-fi"
 							element={
 								<Table
-									description="De-Fis price Ranking by Market Capitalization."
+									description="Ranking of De-Fi price by Market Capitalization."
 									category={'decentralized-finance-defi'}
 								/>
 							}

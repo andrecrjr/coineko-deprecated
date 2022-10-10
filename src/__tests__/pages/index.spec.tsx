@@ -2,7 +2,7 @@ import {
 	render,
 	screen,
 	RenderResult,
-	fireEvent,
+	fireEvent
 } from '@testing-library/react';
 import App from '../../App';
 import { describe, expect, beforeEach, vi, it } from 'vitest';
@@ -29,7 +29,7 @@ vi.mock('axios', async () => {
 				} else {
 					return { data: cryptoListMockPageTwo };
 				}
-			}),
+			})
 		};
 	});
 
@@ -84,12 +84,12 @@ describe('Main App test', () => {
 		const nftButton = await screen.findByTestId('button-nft');
 		fireEvent.click(nftButton);
 		const nftPage = await screen.findByText(
-			'Price of NFT\'s cryptocurrency by Market Cap'
+			'Ranking of NFT price by Market Capitalization.'
 		);
 		const flowPage = await screen.findByText('Flow');
 		const apePage = await screen.findByText('ApeCoin');
 		expect(nftPage.textContent).toBe(
-			'Price of NFT\'s cryptocurrency by Market Cap'
+			'Ranking of NFT price by Market Capitalization.'
 		);
 		expect(flowPage.textContent).toBe('Flow');
 		expect(apePage.textContent).toBe('ApeCoin');

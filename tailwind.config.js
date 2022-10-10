@@ -1,14 +1,14 @@
 module.exports = {
 	jit: true,
-	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
 			fontFamily: {
-				roboto: "Roboto",
+				roboto: 'Roboto',
 			},
 			colors: {
-				"purple-neko": "#9B9EFA",
-				"dark-purple-neko": "#6769AD",
+				'purple-neko': '#9B9EFA',
+				'dark-purple-neko': '#6769AD',
 			},
 		},
 	},
