@@ -2,7 +2,7 @@ import { useCallback, useContext, useEffect, useState } from 'react';
 import Star from './star.svg?component';
 import Cat from 'src/assets/cat.svg?component';
 import { axiosInstance } from 'src/Services/ApiService';
-import { CurrencyList, Currency, PaginationState } from 'src/Types';
+import { CurrencyList, Currency } from 'src/Types';
 import { formatterMoney } from 'src/utils';
 import Pagination from './Pagination';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';

@@ -27,7 +27,7 @@ export const Header = () => {
 								pathname: item.path
 							}}
 							key={index}
-							onClick={(e) => {
+							onClick={() => {
 								setPagination((oldState) => ({
 									...oldState,
 									...{

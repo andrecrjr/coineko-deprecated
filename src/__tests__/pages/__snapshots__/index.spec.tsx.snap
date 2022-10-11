@@ -48,76 +48,56 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
       <ul
         class="list-none flex self-center "
       >
-        <div
-          class="contents"
+        <a
+          href="/"
         >
-          <a
-            href="/?page=1"
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-cryptocurrency"
           >
-            <li
-              class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-              data-testid="button-cryptocurrency"
-            >
-              Cryptocurrency
-            </li>
-          </a>
-        </div>
-        <div
-          class="contents"
+            Cryptocurrency
+          </li>
+        </a>
+        <a
+          href="/nft"
         >
-          <a
-            href="/nft?page=1"
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-nft"
           >
-            <li
-              class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-              data-testid="button-nft"
-            >
-              NFT
-            </li>
-          </a>
-        </div>
-        <div
-          class="contents"
+            NFT
+          </li>
+        </a>
+        <a
+          href="/de-fi"
         >
-          <a
-            href="/de-fi?page=1"
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-defi"
           >
-            <li
-              class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-              data-testid="button-defi"
-            >
-              DeFi
-            </li>
-          </a>
-        </div>
-        <div
-          class="contents"
+            DeFi
+          </li>
+        </a>
+        <a
+          href="/exchange"
         >
-          <a
-            href="/exchange?page=1"
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-exchange"
           >
-            <li
-              class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-              data-testid="button-exchange"
-            >
-              Exchange
-            </li>
-          </a>
-        </div>
-        <div
-          class="contents"
+            Exchange
+          </li>
+        </a>
+        <a
+          href="/portfolio"
         >
-          <a
-            href="/portfolio?page=1"
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-portfolio"
           >
-            <li
-              class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-              data-testid="button-portfolio"
-            >
-              Portfolio
-            </li>
-          </a>
-        </div>
+            Portfolio
+          </li>
+        </a>
       </ul>
     </nav>
   </header>
