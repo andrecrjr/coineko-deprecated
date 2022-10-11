@@ -7,19 +7,28 @@ function Pagination() {
 	const paginationMove = (e: React.MouseEvent, next: boolean) => {
 		e.preventDefault();
 		if (next) {
-			setPagination((oldPage) => oldPage + 1);
+			setPagination((oldPage) => {
+				return {
+					...page,
+					number: oldPage.number + 1,
+					firstOrPagination: 'pagination'
+				};
+			});
 		} else {
 			setPagination((oldPage) => {
-				return oldPage - 1;
+				return {
+					...page,
+					number: oldPage.number - 1,
+					firstOrPagination: 'pagination'
+				};
 			});
 		}
 		window.scrollTo(0, 0);
-		window.location.href.replace(window.location.search, '');
 	};
 
 	return (
 		<div className="w-full flex justify-center mt-2 space-x-10">
-			{page > 1 ? (
+			{page.number > 1 ? (
 				<MdArrowBackIos
 					className="fill-purple-neko cursor-pointer  w-10 text-xl"
 					data-testid="previous-button"
@@ -28,7 +37,7 @@ function Pagination() {
 			) : (
 				''
 			)}
-			<span>Page {page}</span>
+			<span>Page {page.number}</span>
 			<MdArrowForwardIos
 				className="fill-purple-neko  cursor-pointer  w-10 text-xl"
 				data-testid="next-button"

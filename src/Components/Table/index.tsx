@@ -2,7 +2,7 @@ import { useCallback, useContext, useEffect, useState } from 'react';
 import Star from './star.svg?component';
 import Cat from 'src/assets/cat.svg?component';
 import { axiosInstance } from 'src/Services/ApiService';
-import { CurrencyList, Currency } from 'src/Types';
+import { CurrencyList, Currency, PaginationState } from 'src/Types';
 import { formatterMoney } from 'src/utils';
 import Pagination from './Pagination';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';
@@ -15,10 +15,7 @@ interface Props {
 export const Table = ({ description, category }: Props) => {
 	const filter = useContext(FilterGlobalContext);
 	const [currencyList, setList] = useState<CurrencyList>([]);
-	const [page, setPagination] = useState<number>(1);
-	const urlQuery =
-		window.location.search.length > 0 &&
-		parseInt(new URLSearchParams(window.location.search).get('page') || '1');
+	const { page } = useContext(PaginationContext);
 
 	const fetchServiceByFilterAndUpdateData = useCallback(
 		async (filterPaginationAndCategory) => {
@@ -27,7 +24,8 @@ export const Table = ({ description, category }: Props) => {
 				if (filterPaginationAndCategory) {
 					result = new URLSearchParams({
 						...filter,
-						...filterPaginationAndCategory
+						...filterPaginationAndCategory,
+						...{ category: (!!category && category) || filter.category }
 					}).toString();
 				}
 			const { data } = await axiosInstance.get(
@@ -39,57 +37,50 @@ export const Table = ({ description, category }: Props) => {
 	);
 
 	useEffect(() => {
-		if (category) {
-			fetchServiceByFilterAndUpdateData({
-				category,
-				...{ page: page || urlQuery }
-			});
-		} else {
-			fetchServiceByFilterAndUpdateData({
-				...{ page: urlQuery || page }
-			});
-		}
-	}, [page, filter, category, urlQuery]);
+		fetchServiceByFilterAndUpdateData({
+			...{
+				page: page.number
+			}
+		});
+	}, [page, filter, category]);
 
 	return (
-		<PaginationContext.Provider value={{ page, setPagination }}>
-			<section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative">
-				<section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 ">
-					<span>
-						<Cat className="w-[35px] h-[35px]" />
-					</span>
-					<h3 className="text-xs text-left items-start md:text-base">
-						{description}
-					</h3>
-				</section>
-				<section
-					className="overflow-x-scroll 
-				 sm:overflow-x-auto sm:w-10/12 mb-10"
-				>
-					<table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
-						<thead className="">
-							<tr>
-								<td className="table--head px-0 w-5 h-auto"></td>
-								<td className="table--head px-3 text-left">#</td>
-								<td className="table--head pl-[32px]">Coin</td>
-								<td className="table--head min-w-[170px]">Price</td>
-								<td className="table--head">1h</td>
-								<td className="table--head">24h</td>
-								<td className="table--head">7d</td>
-								<td className="table--head">Market Cap.</td>
-							</tr>
-						</thead>
-						<tbody className="border-t-[2px] border-[#B8BAFF]">
-							{currencyList.length > 0 &&
-								currencyList.map((currency: Currency) => (
-									<CurrencyChild key={currency.name} currency={currency} />
-								))}
-						</tbody>
-					</table>
-					<Pagination />
-				</section>
+		<section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative">
+			<section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 ">
+				<span>
+					<Cat className="w-[35px] h-[35px]" />
+				</span>
+				<h3 className="text-xs text-left items-start md:text-base">
+					{description}
+				</h3>
 			</section>
-		</PaginationContext.Provider>
+			<section
+				className="overflow-x-scroll 
+				 sm:overflow-x-auto sm:w-10/12 mb-10"
+			>
+				<table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
+					<thead className="">
+						<tr>
+							<td className="table--head px-0 w-5 h-auto"></td>
+							<td className="table--head px-3 text-left">#</td>
+							<td className="table--head pl-[32px]">Coin</td>
+							<td className="table--head min-w-[170px]">Price</td>
+							<td className="table--head">1h</td>
+							<td className="table--head">24h</td>
+							<td className="table--head">7d</td>
+							<td className="table--head">Market Cap.</td>
+						</tr>
+					</thead>
+					<tbody className="border-t-[2px] border-[#B8BAFF]">
+						{currencyList.length > 0 &&
+							currencyList.map((currency: Currency) => (
+								<CurrencyChild key={currency.name} currency={currency} />
+							))}
+					</tbody>
+				</table>
+				<Pagination />
+			</section>
+		</section>
 	);
 };
 

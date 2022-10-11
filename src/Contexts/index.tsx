@@ -1,12 +1,16 @@
 import { createContext } from 'react';
+import { Pagination } from 'src/Types';
 
-export const PaginationContext = createContext<{
-	page: number;
-	setPagination: React.Dispatch<React.SetStateAction<number>>;
-}>({
-	page: 1,
+export const PaginationContext = createContext<Pagination>({
+	page: {
+		number: 1,
+		firstOrPagination: 'current'
+	},
 	setPagination: () => {
-		return 0;
+		return {
+			number: 1,
+			firstOrPagination: 'current'
+		};
 	}
 });
 
@@ -16,5 +20,6 @@ export const FilterGlobalContext = createContext({
 	per_page: '50',
 	page: 1,
 	sparkline: 'false',
-	price_change_percentage: '1h,24h,7d'
+	price_change_percentage: '1h,24h,7d',
+	category: 'cryptocurrency'
 });

@@ -1,8 +1,11 @@
 import { MenuOptions } from './menu';
 import Cat from '../../assets/cat.svg?component';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { PaginationContext } from 'src/Contexts';
 
 export const Header = () => {
+	const { setPagination } = useContext(PaginationContext);
 	return (
 		<header className="flex flex-col items-center">
 			<section className="ml-4 py-2 flex w-10/12">
@@ -19,21 +22,28 @@ export const Header = () => {
 			>
 				<ul className="list-none flex self-center ">
 					{MenuOptions.map((item, index) => (
-						<div className="contents" key={index}>
-							<Link
-								to={{
-									pathname: item.path,
-									search: '?page=1'
-								}}
+						<Link
+							to={{
+								pathname: item.path
+							}}
+							key={index}
+							onClick={(e) => {
+								setPagination((oldState) => ({
+									...oldState,
+									...{
+										number: 1,
+										firstOrPagination: 'current'
+									}
+								}));
+							}}
+						>
+							<li
+								className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+								data-testid={`button-${item.alias.toLowerCase()}`}
 							>
-								<li
-									className="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
-									data-testid={`button-${item.alias.toLowerCase()}`}
-								>
-									{item.alias}
-								</li>
-							</Link>
-						</div>
+								{item.alias}
+							</li>
+						</Link>
 					))}
 				</ul>
 			</nav>
