@@ -59,7 +59,7 @@ export const Table = ({ description, category }: Props) => {
 				 sm:overflow-x-auto sm:w-10/12 mb-10"
 			>
 				<table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
-					<thead className="">
+					<thead className="border-b-[2px] border-[#4d51bb]">
 						<tr>
 							<td className="table--head px-0 w-5 h-auto"></td>
 							<td className="table--head px-3 text-left">#</td>
@@ -71,11 +71,8 @@ export const Table = ({ description, category }: Props) => {
 							<td className="table--head">Market Cap.</td>
 						</tr>
 					</thead>
-					<tbody className="border-t-[2px] border-[#B8BAFF]">
-						{currencyList.length > 0 &&
-							currencyList.map((currency: Currency) => (
-								<CurrencyChild key={currency.name} currency={currency} />
-							))}
+					<tbody className="min-h-screen">
+						<CurrencyTable currencyList={currencyList} />
 					</tbody>
 				</table>
 				<Pagination />
@@ -84,7 +81,26 @@ export const Table = ({ description, category }: Props) => {
 	);
 };
 
-export const CurrencyChild = ({ currency }: { currency: Currency }) => {
+const CurrencyTable = ({ currencyList }: { currencyList: Currency[] }) => {
+	const skeletonArray50ByPage = Array.from(Array(50).keys());
+	if (currencyList.length > 0)
+		return (
+			<>
+				{currencyList.map((currency: Currency) => (
+					<CurrencyChild key={currency.name} currency={currency} />
+				))}
+			</>
+		);
+	return (
+		<>
+			{skeletonArray50ByPage.map((item) => (
+				<CurrencyChild key={item} />
+			))}
+		</>
+	);
+};
+
+export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
 	const [Favorite, setFavorite] = useState(false);
 	return (
 		<tr className="table--body__line pt-4">
@@ -101,15 +117,18 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 				</span>
 			</td>
 			<td
-				className="table--body text-left max-w-[100px] 
-			text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3"
+				className="table--body text-left
+			text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
 			>
-				{currency.market_cap_rank}
+				{currency?.market_cap_rank || '...'}
 			</td>
 			<td className="table--body table--body__coin">
 				<section className="grid grid-cols-[auto_1fr] auto-rows-max">
 					<img
-						src={`${currency.image.replace('large', 'thumb')}`}
+						src={`${
+							currency?.image.replace('large', 'thumb') ||
+							'https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579'
+						}`}
 						className="mx-auto mt-auto"
 						style={{ userSelect: 'none' }}
 						width="25"
@@ -121,13 +140,13 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 										 break-words overflow-scroll sm:overflow-hidden"
 						style={{ userSelect: 'none' }}
 					>
-						{currency.name}
+						{currency?.name || 'Loading'}
 					</a>
 					<p
 						className="text-[10px] text-center 
 					text-dark-purple-neko font-bold max-w-[auto] break-words"
 					>
-						{currency.symbol.toUpperCase()}
+						{currency?.symbol.toUpperCase() || '...'}
 					</p>
 				</section>
 			</td>
@@ -139,40 +158,42 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 						style: 'currency',
 						currency: 'USD'
 					},
-					currency.current_price
+					currency?.current_price || 0
 				)}
 			</td>
 			<td
 				className={`table--body ${
-					currency.price_change_percentage_1h_in_currency > 0
+					currency?.price_change_percentage_1h_in_currency || 0 > 0
 						? 'text-green-500'
 						: 'text-red-600'
 				}`}
 			>
-				{currency.price_change_percentage_1h_in_currency &&
-					currency.price_change_percentage_1h_in_currency.toFixed(2)}
+				{currency?.price_change_percentage_1h_in_currency &&
+					currency?.price_change_percentage_1h_in_currency.toFixed(2)}
 				%
 			</td>
 			<td
 				className={`table--body ${
-					currency.market_cap_change_percentage_24h > 0
+					currency?.market_cap_change_percentage_24h || 0 > 0
 						? 'text-green-500'
 						: 'text-red-600'
 				}`}
 			>
-				{currency.market_cap_change_percentage_24h &&
-					currency.market_cap_change_percentage_24h.toFixed(2)}{' '}
+				{(currency?.market_cap_change_percentage_24h &&
+					currency?.market_cap_change_percentage_24h.toFixed(2)) ||
+					'0.00'}
 				%
 			</td>
 			<td
 				className={`table--body  ${
-					currency.price_change_percentage_7d_in_currency > 0
+					currency?.price_change_percentage_7d_in_currency || 0 > 0
 						? 'text-green-500'
 						: 'text-red-600'
 				}`}
 			>
-				{currency.price_change_percentage_7d_in_currency &&
-					currency.price_change_percentage_7d_in_currency.toFixed(2)}{' '}
+				{(currency?.price_change_percentage_7d_in_currency &&
+					currency.price_change_percentage_7d_in_currency.toFixed(2)) ||
+					'0.00'}
 				%
 			</td>
 			<td className="table--body">
@@ -182,7 +203,7 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 						style: 'currency',
 						currency: 'USD'
 					},
-					currency.market_cap || 0
+					currency?.market_cap || 0
 				)}
 			</td>
 		</tr>

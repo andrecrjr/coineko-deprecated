@@ -4,11 +4,9 @@
 @tailwind utilities;
 
 @layer components {
-	.App {
-		@apply h-screen;
-	}
+
 	body {
-		@apply bg-[#ECECEC];
+		@apply  bg-[#ECECEC] min-h-screen;
 	}
 	.table--head {
 		@apply text-dark-purple-neko font-bold text-[14px] px-10 py-[15px] font-roboto;
@@ -26,6 +24,10 @@
 	.table--body__coin {
 		@apply text-left text-[0.78rem] text-[#272727] leading-4 w-[180px];
 		@apply lg:pl-0;
+	}
+
+	.table--body__border{
+		@apply border-b-[24px] border-[transparent];
 	}
 
 	.table--body__line:last-child {
