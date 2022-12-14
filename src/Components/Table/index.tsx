@@ -133,6 +133,7 @@ export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
 						style={{ userSelect: 'none' }}
 						width="25"
 						height="25"
+						alt={currency?.name}
 					/>
 					<a
 						className="row-span-2 w-max flex 
