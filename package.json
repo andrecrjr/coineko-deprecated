@@ -8,7 +8,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",
-    "lint": "eslint --ext js,ts,tsx src"
+    "lint": "eslint --ext js,ts,tsx src",
+    "prepare": "husky install"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -35,6 +36,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.0",
     "jsdom": "^20.0.0",
     "postcss": "^8.4.5",
     "prettier": "^2.7.1",

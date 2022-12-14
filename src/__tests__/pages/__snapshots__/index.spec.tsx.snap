@@ -228,6 +228,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Bitcoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"
@@ -256,13 +257,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $20,281.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.58
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -8.53
               %
@@ -316,6 +317,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Ethereum"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880"
@@ -344,13 +346,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1,580.53
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.61
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.40
               %
@@ -404,6 +406,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Tether"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"
@@ -432,13 +435,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.24
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.34
               %
@@ -492,6 +495,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="USD Coin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389"
@@ -520,13 +524,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.10
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.21
               %
@@ -580,6 +584,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="BNB"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850"
@@ -608,13 +613,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $277.52
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.08
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -3.83
               %
@@ -668,6 +673,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Binance USD"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766"
@@ -696,13 +702,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.22
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.74
               %
@@ -756,6 +762,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="XRP"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png?1605778731"
@@ -784,13 +791,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.33
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.22
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.86
               %
@@ -844,6 +851,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Cardano"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"
@@ -872,13 +880,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.47
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.36
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.35
               %
@@ -932,6 +940,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Solana"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"
@@ -960,13 +969,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $33.41
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.86
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -9.50
               %
@@ -1020,6 +1029,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Polkadot"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"
@@ -1048,13 +1058,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $7.13
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.51
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.09
               %
@@ -1108,6 +1118,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Dogecoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256"
@@ -1136,13 +1147,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.06
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.31
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -4.41
               %
@@ -1196,6 +1207,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Shiba Inu"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/11939/thumb/shiba.png?1622619446"
@@ -1224,13 +1236,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.31
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -2.87
               %
@@ -1284,6 +1296,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Lido Staked Ether"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png?1608607546"
@@ -1312,13 +1325,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1,532.36
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.67
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.74
               %
@@ -1372,6 +1385,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Dai"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734"
@@ -1400,13 +1414,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.03
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.39
               %
@@ -1460,6 +1474,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Polygon"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912"
@@ -1488,13 +1503,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.85
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.41
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.91
               %
@@ -1548,6 +1563,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="TRON"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png?1547035066"
@@ -1576,13 +1592,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.06
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.32
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -2.93
               %
@@ -1636,6 +1652,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Avalanche"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12559/thumb/coin-round-red.png?1604021818"
@@ -1664,13 +1681,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $19.05
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.43
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -8.66
               %
@@ -1724,6 +1741,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Wrapped Bitcoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png?1548822744"
@@ -1752,13 +1770,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $20,286.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.60
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -8.36
               %
@@ -1812,6 +1830,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Ethereum Classic"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/453/thumb/ethereum-classic-logo.png?1547034169"
@@ -1840,13 +1859,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $36.19
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               1.71
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -3.89
               %
@@ -1900,6 +1919,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Uniswap"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604"
@@ -1928,13 +1948,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $6.12
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.74
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.71
               %
@@ -1988,6 +2008,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="LEO Token"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/8418/thumb/leo-token.png?1558326215"
@@ -2016,19 +2037,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $4.95
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               3.87
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -3.21
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -3.82
               %
@@ -2076,6 +2097,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Litecoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580"
@@ -2104,13 +2126,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $59.08
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.23
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -2.33
               %
@@ -2164,6 +2186,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Cosmos Hub"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/1481/thumb/cosmos_hub.png?1555657960"
@@ -2192,13 +2215,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $14.05
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.31
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -7.97
               %
@@ -2252,6 +2275,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="OKB"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/4463/thumb/WeChat_Image_20220118095654.png?1642471050"
@@ -2280,13 +2304,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $15.29
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.34
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.19
               %
@@ -2340,6 +2364,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="NEAR Protocol"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/10365/thumb/near_icon.png?1601359077"
@@ -2368,13 +2393,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $4.46
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.88
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -10.11
               %
@@ -2428,6 +2453,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="FTX"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/9026/thumb/F.png?1609051564"
@@ -2456,13 +2482,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $25.98
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.48
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -7.38
               %
@@ -2516,6 +2542,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Chainlink"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1547034700"
@@ -2544,13 +2571,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $7.13
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.73
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.22
               %
@@ -2604,6 +2631,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Cronos"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/7310/thumb/oCw2s3GI_400x400.jpeg?1645172042"
@@ -2632,19 +2660,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.11
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.55
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -7.63
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -1.15
               %
@@ -2692,6 +2720,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Stellar"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157"
@@ -2720,13 +2749,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.11
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.02
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.29
               %
@@ -2780,6 +2809,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Monero"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png?1547033729"
@@ -2808,13 +2838,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $145.57
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.04
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -9.76
               %
@@ -2868,6 +2898,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Terra Luna Classic"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/8284/thumb/01_LunaClassic_color.png?1653547790"
@@ -2896,19 +2927,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -1.63
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               15.15
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -7.62
               %
@@ -2956,6 +2987,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Bitcoin Cash"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/780/thumb/bitcoin-cash-circle.png?1594689492"
@@ -2984,13 +3016,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $118.49
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.61
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.66
               %
@@ -3044,6 +3076,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Algorand"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/4380/thumb/download.png?1547039725"
@@ -3072,13 +3105,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.30
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.42
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.38
               %
@@ -3132,6 +3165,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Flow"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/13446/thumb/5f6294c0c7a8cda55cb1c936_Flow_Wordmark.png?1631696776"
@@ -3160,13 +3194,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.86
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               1.25
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -9.08
               %
@@ -3220,6 +3254,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="VeChain"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/1167/thumb/VeChain-Logo-768x725.png?1547035194"
@@ -3248,13 +3283,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.02
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.43
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.40
               %
@@ -3308,6 +3343,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Internet Computer"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/14495/thumb/Internet_Computer_logo.png?1620703073"
@@ -3336,13 +3372,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $6.43
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.60
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.39
               %
@@ -3396,6 +3432,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Filecoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12817/thumb/filecoin.png?1602753933"
@@ -3424,13 +3461,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $5.94
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.74
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.73
               %
@@ -3484,6 +3521,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="ApeCoin"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/24383/thumb/apecoin.jpg?1647476455"
@@ -3512,13 +3550,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $5.19
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -0.08
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -3.87
               %
@@ -3572,6 +3610,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Hedera"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/3688/thumb/hbar.png?1637045634"
@@ -3600,13 +3639,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.07
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.77
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.83
               %
@@ -3660,6 +3699,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="EOS"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/738/thumb/eos-eos-logo.png?1547034481"
@@ -3688,13 +3728,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.47
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.83
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -9.98
               %
@@ -3748,6 +3788,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Chain"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/24210/thumb/Chain_icon_200x200.png?1646895054"
@@ -3776,19 +3817,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.07
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.06
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.91
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -6.60
               %
@@ -3836,6 +3877,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Frax"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/13422/thumb/frax_logo.png?1608476506"
@@ -3864,13 +3906,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.12
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.02
               %
@@ -3924,6 +3966,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Tezos"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/976/thumb/Tezos-logo.png?1547034862"
@@ -3952,13 +3995,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.54
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.21
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -4.91
               %
@@ -4012,6 +4055,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Quant"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/3370/thumb/5ZOu7brX_400x400.jpg?1612437252"
@@ -4040,13 +4084,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $99.91
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.86
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -4.49
               %
@@ -4100,6 +4144,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Decentraland"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/878/thumb/decentraland-mana.png?1550108745"
@@ -4128,19 +4173,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.74
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.56
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -4.99
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -0.38
               %
@@ -4188,6 +4233,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="The Sandbox"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12129/thumb/sandbox_logo.jpg?1597397942"
@@ -4216,13 +4262,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $0.89
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.40
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.46
               %
@@ -4276,6 +4322,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Axie Infinity"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/13029/thumb/axie_infinity_logo.png?1604471082"
@@ -4304,13 +4351,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $13.32
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.67
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -4.00
               %
@@ -4364,6 +4411,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Aave"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12645/thumb/AAVE.png?1601374110"
@@ -4392,13 +4440,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $84.00
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.71
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -6.48
               %
@@ -4452,6 +4500,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Lido DAO"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/13573/thumb/Lido_DAO.png?1609873644"
@@ -4480,19 +4529,19 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $1.84
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.85
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -5.95
               %
             </td>
             <td
-              class="table--body  text-green-500"
+              class="table--body  text-red-600"
             >
               -1.34
               %
@@ -4540,6 +4589,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
                 class="grid grid-cols-[auto_1fr] auto-rows-max"
               >
                 <img
+                  alt="Elrond"
                   class="mx-auto mt-auto"
                   height="25"
                   src="https://assets.coingecko.com/coins/images/12335/thumb/elrond3_360.png?1626341589"
@@ -4568,13 +4618,13 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               $49.31
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-green-500"
             >
               0.57
               %
             </td>
             <td
-              class="table--body text-green-500"
+              class="table--body  text-red-600"
             >
               -2.51
               %
