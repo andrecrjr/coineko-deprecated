@@ -14,7 +14,7 @@
 	}
 
 	.table--body {
-		@apply text-center text-[0.88rem] font-roboto font-bold pt-5 pl-1;
+		@apply text-center text-[0.90rem] font-roboto font-bold pt-4 pl-1;
 		@apply lg:pl-8 lg:text-left;
 	}
 	.table--body:last-child {
@@ -22,7 +22,7 @@
 	}
 
 	.table--body__coin {
-		@apply text-left text-[0.78rem] text-[#272727] leading-4 w-[180px];
+		@apply text-left text-[0.70rem] text-[#272727] leading-5 w-[180px];
 		@apply lg:pl-0;
 	}
 
