@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import Cat from 'src/assets/cat.svg?component';
+
 import { CurrencyList } from 'src/Types';
 import Pagination from './Pagination';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';
@@ -19,7 +20,7 @@ export const Table = ({ description, category }: Props) => {
 	const filterFetchData = useFilter({
 		filterDataObject: {
 			...filterContext,
-			...{ page: page.number || 1, category }
+			...{ page: page.number.toString() || '1', category }
 		}
 	});
 	filterFetchData;

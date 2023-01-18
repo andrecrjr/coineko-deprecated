@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { PageCurrencyQuery } from 'src/Types';
+import { convertFilterQueryString } from 'src/utils';
 
 export const useFilter = ({
 	filterDataObject
@@ -10,11 +11,12 @@ export const useFilter = ({
 		'?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
 	);
 	const fetchServiceByFilterAndUpdateData = useCallback(
-		async (filterPaginationAndCategory) => {
-			const filterResult = new URLSearchParams({
-				...filterPaginationAndCategory
-			}).toString();
-			setFilter(`?${filterResult}` || '');
+		async (filterPaginationAndCategory: PageCurrencyQuery) => {
+			const queryStringFilter = convertFilterQueryString(
+				filterPaginationAndCategory
+			);
+			console.log(queryStringFilter);
+			setFilter(`?${queryStringFilter}` || '');
 		},
 		[filterDataObject]
 	);
@@ -23,7 +25,7 @@ export const useFilter = ({
 		fetchServiceByFilterAndUpdateData(filterDataObject);
 
 		return () => {
-			fetchServiceByFilterAndUpdateData('');
+			fetchServiceByFilterAndUpdateData(filterDataObject);
 		};
 	}, [filterDataObject]);
 
