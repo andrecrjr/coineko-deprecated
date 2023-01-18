@@ -6,7 +6,10 @@ const defaultConfig = {
 	revalidateOnFocus: true
 };
 
-const fetcher = (url: string) => axios.get(url).then((res) => res.data);
+const fetcher = async (url: string) => {
+	const { data } = await axiosInstance.get(url);
+	return data;
+};
 
 export function useFetch<T>(
 	path: string,
