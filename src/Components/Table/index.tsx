@@ -25,7 +25,7 @@ export const Table = ({ description, category }: Props) => {
 			...{ page: page.number || 1, category }
 		}
 	});
-	console.log(filterFetchData);
+	filterFetchData;
 
 	const { data: cryptoCurrenciesList, isLoading } = useFetch<CurrencyList>(
 		filterFetchData,

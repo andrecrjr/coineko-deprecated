@@ -12,7 +12,6 @@ export const useFilter = ({
 
 	const fetchServiceByFilterAndUpdateData = useCallback(
 		async (filterPaginationAndCategory) => {
-			// console.log(filterPaginationAndCategory);
 			const filterResult = new URLSearchParams({
 				...filterPaginationAndCategory
 			}).toString();
@@ -22,7 +21,6 @@ export const useFilter = ({
 	);
 
 	useEffect(() => {
-		console.log(filterDataObject);
 		fetchServiceByFilterAndUpdateData(filterDataObject);
 
 		return () => {
