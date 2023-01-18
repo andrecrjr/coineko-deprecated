@@ -5,7 +5,7 @@ import Star from './star.svg?component';
 
 const CurrencyTable = ({ currencyList }: { currencyList: Currency[] }) => {
 	const skeletonArray50ByPage = Array.from(Array(50).keys());
-	if (currencyList.length > 0)
+	if (currencyList?.length > 0)
 		return (
 			<>
 				{currencyList.map((currency: Currency) => (

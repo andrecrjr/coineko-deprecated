@@ -22,8 +22,7 @@ function App() {
 						per_page: '50',
 						sparkline: 'false',
 						page: 1,
-						price_change_percentage: '1h,24h,7d',
-						category: 'cryptocurrency'
+						price_change_percentage: '1h,24h,7d'
 					}}
 				>
 					<div className="App">
