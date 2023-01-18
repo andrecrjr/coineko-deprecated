@@ -1,14 +1,11 @@
-import { useCallback, useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import Cat from 'src/assets/cat.svg?component';
-import { axiosInstance } from 'src/Services/ApiService';
 import { CurrencyList } from 'src/Types';
 import Pagination from './Pagination';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';
 import CurrencyTable from './CurrencyTable';
 import { useFetch } from 'src/Hooks/useSWR';
 import { useFilter } from 'src/Hooks/useFilter';
-import useSWR from 'swr';
-import axios from 'axios';
 
 interface Props {
 	description: string;

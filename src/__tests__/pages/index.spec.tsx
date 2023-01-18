@@ -3,7 +3,6 @@ import {
 	screen,
 	RenderResult,
 	fireEvent,
-	act,
 	waitFor
 } from '@testing-library/react';
 import App from '../../App';

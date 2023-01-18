@@ -1,4 +1,4 @@
-import axios, { Method } from 'axios';
+import { Method } from 'axios';
 import useSWR from 'swr';
 import { axiosInstance } from '../Services/ApiService';
 
@@ -18,7 +18,8 @@ export function useFetch<T>(
 ): { data: T; error: unknown; isLoading: boolean } {
 	const { data, error, isLoading } = useSWR(
 		`https://api.coingecko.com/api/v3/coins/markets${path}`,
-		fetcher
+		fetcher,
+		swrOptions
 	);
 	return { data, error, isLoading };
 }
