@@ -32,15 +32,18 @@ function Pagination() {
 				<MdArrowBackIos
 					className="fill-purple-neko cursor-pointer  w-10 text-xl"
 					data-testid="previous-button"
+					role={'button'}
 					onClick={(e) => paginationMove(e, false)}
 				/>
 			) : (
 				''
 			)}
 			<span>Page {page.number}</span>
+
 			<MdArrowForwardIos
 				className="fill-purple-neko  cursor-pointer  w-10 text-xl"
 				data-testid="next-button"
+				role="button"
 				onClick={(e) => paginationMove(e, true)}
 			/>
 		</div>
