@@ -15,7 +15,6 @@ export const useFilter = ({
 			const queryStringFilter = convertFilterQueryString(
 				filterPaginationAndCategory
 			);
-			console.log(queryStringFilter);
 			setFilter(`?${queryStringFilter}` || '');
 		},
 		[filterDataObject]
