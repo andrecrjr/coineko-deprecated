@@ -23,12 +23,12 @@ export const Table = ({ description, category }: Props) => {
 			...{ page: page.number.toString() || '1', category }
 		}
 	});
-	filterFetchData;
 
 	const { data: cryptoCurrenciesList, isLoading } = useFetch<CurrencyList>(
 		filterFetchData,
 		'GET'
 	);
+	
 	return (
 		<section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative">
 			<section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 ">

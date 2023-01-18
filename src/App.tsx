@@ -25,48 +25,54 @@ function App() {
 						price_change_percentage: '1h,24h,7d'
 					}}
 				>
-					<div className="App">
-						<Header />
-						<Routes>
-							<Route
-								path="/"
-								element={
-									<Table description="Price of the main cryptocurrencies by Market Capitalization." />
-								}
-							/>
-							<Route
-								path="nft"
-								element={
-									<Table
-										description="Ranking of NFT price by Market Capitalization."
-										category={'non-fungible-tokens-nft'}
-									/>
-								}
-							/>
-							<Route
-								path="de-fi"
-								element={
-									<Table
-										description="Ranking of De-Fi prices by Market Capitalization."
-										category={'decentralized-finance-defi'}
-									/>
-								}
-							/>
-							<Route
-								path="exchange"
-								element={
-									<Table
-										description="Price of cryptocurrencies exchange by Market Capitalization."
-										category={'exchange-based-tokens'}
-									/>
-								}
-							/>
-						</Routes>
-					</div>
+					<AppRoutes />
 				</FilterGlobalContext.Provider>
 			</PaginationContext.Provider>
 		</Router>
 	);
 }
+
+export const AppRoutes = () => {
+	return (
+		<div className="App">
+			<Header />
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<Table description="Price of the main cryptocurrencies by Market Capitalization." />
+					}
+				/>
+				<Route
+					path="nft"
+					element={
+						<Table
+							description="Ranking of NFT price by Market Capitalization."
+							category={'non-fungible-tokens-nft'}
+						/>
+					}
+				/>
+				<Route
+					path="de-fi"
+					element={
+						<Table
+							description="Ranking of De-Fi prices by Market Capitalization."
+							category={'decentralized-finance-defi'}
+						/>
+					}
+				/>
+				<Route
+					path="exchange"
+					element={
+						<Table
+							description="Price of cryptocurrencies exchange by Market Capitalization."
+							category={'exchange-based-tokens'}
+						/>
+					}
+				/>
+			</Routes>
+		</div>
+	);
+};
 
 export default App;

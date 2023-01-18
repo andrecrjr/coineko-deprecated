@@ -5,28 +5,23 @@ import {
 	fireEvent,
 	waitFor
 } from '@testing-library/react';
-import App from '../../App';
-import { describe, expect, beforeEach, vi, it } from 'vitest';
+import App, { AppRoutes } from '../../App';
+import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
 import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
 import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
 import cryptoNftListMockPageOne from '../../__mocks__/nftPageOneMock.mock.json';
+import { act } from 'react-dom/test-utils';
+import { ContainerWrapper } from './container';
+import React from 'react';
+import { Table } from 'src/Components/Table';
+import { useFilter } from 'src/Hooks/useFilter';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));
-vi.mock('../../Hooks/useFilter', () => {
-	return {
-		useFilter: vi
-			.fn()
-			.mockReturnValue(
-				'?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
-			)
-	};
-});
 
 vi.mock('axios', async () => {
 	const create = vi.fn().mockImplementation((createUrl) => {
 		return {
-			get: vi.fn().mockImplementation((url) => {
-				const apiFilterUrl = createUrl.baseURL + url;
+			get: vi.fn().mockImplementation((apiFilterUrl) => {
 				if (
 					apiFilterUrl.includes(
 						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
@@ -45,16 +40,22 @@ vi.mock('axios', async () => {
 
 	return { default: { create } };
 });
+vi.mock('../../Hooks/useFilter', () => {
+	return {
+		useFilter: vi.fn().mockImplementation((state) => {
+			return `?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=${state.filterDataObject.page}&price_change_percentage=1h%2C24h%2C7d`;
+		})
+	};
+});
 
 describe('Main App test', () => {
 	let mainApp: RenderResult;
-
 	beforeEach(() => {
-		mainApp = render(<App />);
+		mainApp = render(<AppRoutes />, { wrapper: ContainerWrapper });
 	});
-
 	it('should show title', async () => {
 		expect(screen.getByText(/Coineko/i)).toBeDefined();
+		vi.clearAllMocks();
 	});
 
 	it('should list one crypto', async () => {
@@ -72,20 +73,22 @@ describe('Main App test', () => {
 	it('should go to page two', async () => {
 		const buttonNextPage = await screen.findByTestId('next-button');
 		fireEvent.click(buttonNextPage);
-		waitFor(async () => {
-			const thetaPageTwo = await screen.findByText(/Theta Network/i);
-			const kusamaPageTwo = await screen.findByText(/Kusama/i);
-			const ksmPageTwo = await screen.findByText(/KSM/i);
+
+		await waitFor(() => {
+			const thetaPageTwo = screen.getByText(/Theta Network/i);
+
 			expect(thetaPageTwo.textContent).toBe('Theta Network');
+			const kusamaPageTwo = screen.getByText(/Kusama/i);
+			const ksmPageTwo = screen.getByText(/KSM/i);
 			expect(kusamaPageTwo.textContent).toBe('Kusama');
 			expect(ksmPageTwo.textContent).toBe('KSM');
 		});
 	});
 
 	it('should go to page one from page two', async () => {
-		waitFor(async () => {
-			const buttonNextPage = await screen.findByTestId('next-button');
-			fireEvent.click(buttonNextPage);
+		const buttonNextPage = await screen.findByTestId('next-button');
+		fireEvent.click(buttonNextPage);
+		await waitFor(async () => {
 			const previousPage = await screen.findByTestId('previous-button');
 			fireEvent.click(previousPage);
 			const bitcoinPageOne = await screen.findByText('Bitcoin');
@@ -97,7 +100,7 @@ describe('Main App test', () => {
 		const nftButton = await screen.findByTestId('button-nft');
 		fireEvent.click(nftButton);
 
-		waitFor(async () => {
+		await waitFor(async () => {
 			const nftPage = await screen.findByText(
 				'Ranking of NFT price by Market Capitalization.'
 			);
