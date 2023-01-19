@@ -16,10 +16,6 @@ export function useFetch<T>(
 	method: Method,
 	swrOptions = defaultConfig
 ): { data: T; error: unknown; isLoading: boolean } {
-	const { data, error, isLoading } = useSWR(
-		`https://api.coingecko.com/api/v3/coins/markets${path}`,
-		fetcher,
-		swrOptions
-	);
+	const { data, error, isLoading } = useSWR(`${path}`, fetcher, swrOptions);
 	return { data, error, isLoading };
 }

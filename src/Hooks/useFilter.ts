@@ -7,9 +7,7 @@ export const useFilter = ({
 }: {
 	filterDataObject: PageCurrencyQuery;
 }) => {
-	const [filter, setFilter] = useState<string>(
-		'?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
-	);
+	const [filter, setFilter] = useState<string>('');
 	const fetchServiceByFilterAndUpdateData = useCallback(
 		async (filterPaginationAndCategory: PageCurrencyQuery) => {
 			const queryStringFilter = convertFilterQueryString(
@@ -21,11 +19,8 @@ export const useFilter = ({
 	);
 
 	useEffect(() => {
-		fetchServiceByFilterAndUpdateData(filterDataObject);
-
-		return () => {
+		if (Object.keys(filterDataObject).length > 0)
 			fetchServiceByFilterAndUpdateData(filterDataObject);
-		};
 	}, [filterDataObject]);
 
 	return filter;

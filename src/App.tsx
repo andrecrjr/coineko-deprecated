@@ -1,10 +1,10 @@
 import { Header } from './Components/Header';
 import { useState } from 'react';
-import { Table } from './Components/Table';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import { FilterGlobalContext, PaginationContext } from './Contexts';
 import { PaginationState } from './Types';
+import TablePage from './Page';
 
 function App() {
 	const [page, setPagination] = useState<PaginationState>({
@@ -40,13 +40,13 @@ export const AppRoutes = () => {
 				<Route
 					path="/"
 					element={
-						<Table description="Price of the main cryptocurrencies by Market Capitalization." />
+						<TablePage description="Price of the main cryptocurrencies by Market Capitalization." />
 					}
 				/>
 				<Route
 					path="nft"
 					element={
-						<Table
+						<TablePage
 							description="Ranking of NFT price by Market Capitalization."
 							category={'non-fungible-tokens-nft'}
 						/>
@@ -55,7 +55,7 @@ export const AppRoutes = () => {
 				<Route
 					path="de-fi"
 					element={
-						<Table
+						<TablePage
 							description="Ranking of De-Fi prices by Market Capitalization."
 							category={'decentralized-finance-defi'}
 						/>
@@ -64,7 +64,7 @@ export const AppRoutes = () => {
 				<Route
 					path="exchange"
 					element={
-						<Table
+						<TablePage
 							description="Price of cryptocurrencies exchange by Market Capitalization."
 							category={'exchange-based-tokens'}
 						/>

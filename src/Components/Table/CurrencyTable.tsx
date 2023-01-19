@@ -1,26 +1,7 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { Currency } from 'src/Types';
 import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
-
-const CurrencyTable = ({ currencyList }: { currencyList: Currency[] }) => {
-	const skeletonArray50ByPage = Array.from(Array(50).keys());
-	if (currencyList?.length > 0)
-		return (
-			<>
-				{currencyList.map((currency: Currency) => (
-					<CurrencyChild key={currency.name} currency={currency} />
-				))}
-			</>
-		);
-	return (
-		<>
-			{skeletonArray50ByPage.map((item) => (
-				<CurrencyChild key={item} />
-			))}
-		</>
-	);
-};
 
 export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
 	const [Favorite, setFavorite] = useState(false);
@@ -143,6 +124,20 @@ const ColumnPercentageCurrency = ({
 			{(currencyNumber && currencyNumber.toFixed(2)) || '0.00'}%
 		</td>
 	);
+};
+
+const MemoCurrencyChild = memo(CurrencyChild);
+
+const CurrencyTable = ({ currencyList }: { currencyList: Currency[] }) => {
+	if (currencyList?.length > 0)
+		return (
+			<>
+				{currencyList.map((currency: Currency) => (
+					<MemoCurrencyChild key={currency.name} currency={currency} />
+				))}
+			</>
+		);
+	return <></>;
 };
 
 export default CurrencyTable;

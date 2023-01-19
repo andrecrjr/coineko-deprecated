@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Header } from 'src/Components/Header';
 import { Table } from 'src/Components/Table';
+export const TableMemoized = memo(Table);
 
 type Props = {
 	description: string;
@@ -8,14 +9,7 @@ type Props = {
 };
 
 const TablePage = (props: Props) => {
-	return (
-		<>
-			<div className="App">
-				<Header />
-				<Table {...props} />
-			</div>
-		</>
-	);
+	return <TableMemoized {...props} />;
 };
 
 export default TablePage;
