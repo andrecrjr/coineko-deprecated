@@ -3,46 +3,6 @@ import { Currency } from 'src/Types';
 import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
 
-export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
-	const [Favorite, setFavorite] = useState(false);
-	return (
-		<tr className="table--body__line pt-4">
-			<td className="table--body w-[35px] mr-15">
-				<span>
-					<Star
-						className={`w-5 ${Favorite ? 'fill-purple-neko' : 'fill-[none]'}`}
-						onClick={(e) => {
-							e.preventDefault();
-							setFavorite((state) => !state);
-						}}
-						data-testid="favorite-crypto"
-					/>
-				</span>
-			</td>
-
-			<ColumnCurrencyInfoGrid currency={currency} />
-			<ColumnMoneyFormatter
-				classNames={'table--body overflow-scroll sm:overflow-auto'}
-				formatPrice={currency?.current_price || 0}
-			/>
-
-			<ColumnPercentageCurrency
-				currencyNumber={currency?.price_change_percentage_1h_in_currency}
-			/>
-			<ColumnPercentageCurrency
-				currencyNumber={currency && currency?.market_cap_change_percentage_24h}
-			/>
-			<ColumnPercentageCurrency
-				currencyNumber={currency?.price_change_percentage_7d_in_currency}
-			/>
-			<ColumnMoneyFormatter
-				classNames="table--body"
-				formatPrice={currency?.market_cap || 0}
-			/>
-		</tr>
-	);
-};
-
 const ColumnCurrencyInfoGrid = ({
 	currency
 }: {
@@ -89,6 +49,48 @@ const ColumnCurrencyInfoGrid = ({
 	);
 };
 
+const MemoCurrencyChild = memo(ColumnCurrencyInfoGrid);
+
+export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
+	const [Favorite, setFavorite] = useState(false);
+	return (
+		<tr className="table--body__line pt-4">
+			<td className="table--body w-[35px] mr-15">
+				<span>
+					<Star
+						className={`w-5 ${Favorite ? 'fill-purple-neko' : 'fill-[none]'}`}
+						onClick={(e) => {
+							e.preventDefault();
+							setFavorite((state) => !state);
+						}}
+						data-testid="favorite-crypto"
+					/>
+				</span>
+			</td>
+
+			<ColumnCurrencyInfoGrid currency={currency} />
+			<ColumnMoneyFormatter
+				classNames={'table--body overflow-scroll sm:overflow-auto'}
+				formatPrice={currency?.current_price || 0}
+			/>
+
+			<ColumnPercentageCurrency
+				currencyNumber={currency?.price_change_percentage_1h_in_currency}
+			/>
+			<ColumnPercentageCurrency
+				currencyNumber={currency && currency?.market_cap_change_percentage_24h}
+			/>
+			<ColumnPercentageCurrency
+				currencyNumber={currency?.price_change_percentage_7d_in_currency}
+			/>
+			<ColumnMoneyFormatter
+				classNames="table--body"
+				formatPrice={currency?.market_cap || 0}
+			/>
+		</tr>
+	);
+};
+
 const ColumnMoneyFormatter = ({
 	classNames,
 	formatPrice
@@ -126,14 +128,12 @@ const ColumnPercentageCurrency = ({
 	);
 };
 
-const MemoCurrencyChild = memo(CurrencyChild);
-
 const CurrencyTable = ({ currencyList }: { currencyList: Currency[] }) => {
 	if (currencyList?.length > 0)
 		return (
 			<>
 				{currencyList.map((currency: Currency) => (
-					<MemoCurrencyChild key={currency.name} currency={currency} />
+					<CurrencyChild key={currency.name} currency={currency} />
 				))}
 			</>
 		);

@@ -1,5 +1,5 @@
 import { Header } from './Components/Header';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import { FilterGlobalContext, PaginationContext } from './Contexts';
@@ -75,4 +75,4 @@ export const AppRoutes = () => {
 	);
 };
 
-export default App;
+export default memo(App);

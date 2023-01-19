@@ -5,23 +5,20 @@ import {
 	fireEvent,
 	waitFor
 } from '@testing-library/react';
-import App, { AppRoutes } from '../../App';
-import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
+import { AppRoutes } from '../../App';
+import { describe, expect, beforeEach, vi, it } from 'vitest';
 import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
 import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
 import cryptoNftListMockPageOne from '../../__mocks__/nftPageOneMock.mock.json';
-import { act } from 'react-dom/test-utils';
 import { ContainerWrapper } from './container';
-import React from 'react';
-import { Table } from 'src/Components/Table';
-import { useFilter } from 'src/Hooks/useFilter';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));
 
 vi.mock('axios', async () => {
-	const create = vi.fn().mockImplementation((createUrl) => {
+	const create = vi.fn().mockImplementation(({ baseURL }) => {
 		return {
-			get: vi.fn().mockImplementation((apiFilterUrl) => {
+			get: vi.fn().mockImplementation((url) => {
+				const apiFilterUrl = baseURL + url;
 				if (
 					apiFilterUrl.includes(
 						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
