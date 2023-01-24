@@ -49,8 +49,6 @@ const ColumnCurrencyInfoGrid = ({
 	);
 };
 
-const MemoCurrencyChild = memo(ColumnCurrencyInfoGrid);
-
 export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
 	const [Favorite, setFavorite] = useState(false);
 	return (

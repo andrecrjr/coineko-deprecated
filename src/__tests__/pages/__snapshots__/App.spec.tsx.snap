@@ -1,0 +1,4678 @@
+// Vitest Snapshot v1
+
+exports[`Main App test > should snap all cryptos in home 1`] = `
+<div
+  class="App"
+>
+  <header
+    class="flex flex-col items-center"
+  >
+    <section
+      class="ml-4 py-2 flex w-10/12"
+    >
+      <h1
+        class="text-4xl flex"
+        title="coineko"
+      >
+        coineko
+        <span>
+          <svg
+            class="w-10"
+            fill="none"
+            viewBox="0 0 19 22"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse
+              cx="9.31419"
+              cy="13.5481"
+              fill="#9B9EFA"
+              rx="8.08082"
+              ry="7.75759"
+            />
+            <path
+              d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
+              fill="#9B9EFA"
+            />
+            <path
+              d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
+              fill="#9B9EFA"
+            />
+          </svg>
+        </span>
+      </h1>
+    </section>
+    <nav
+      class="w-full bg-purple-neko overflow-x-scroll 
+ h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
+    >
+      <ul
+        class="list-none flex self-center "
+      >
+        <a
+          href="/"
+        >
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-cryptocurrency"
+          >
+            Cryptocurrency
+          </li>
+        </a>
+        <a
+          href="/nft"
+        >
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-nft"
+          >
+            NFT
+          </li>
+        </a>
+        <a
+          href="/de-fi"
+        >
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-defi"
+          >
+            DeFi
+          </li>
+        </a>
+        <a
+          href="/exchange"
+        >
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-exchange"
+          >
+            Exchange
+          </li>
+        </a>
+        <a
+          href="/portfolio"
+        >
+          <li
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            data-testid="button-portfolio"
+          >
+            Portfolio
+          </li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <section
+    class="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative"
+  >
+    <section
+      class="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 "
+    >
+      <span>
+        <svg
+          class="w-[35px] h-[35px]"
+          fill="none"
+          viewBox="0 0 19 22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="9.31419"
+            cy="13.5481"
+            fill="#9B9EFA"
+            rx="8.08082"
+            ry="7.75759"
+          />
+          <path
+            d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
+            fill="#9B9EFA"
+          />
+          <path
+            d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
+            fill="#9B9EFA"
+          />
+        </svg>
+      </span>
+      <h3
+        class="text-xs text-left items-start md:text-base"
+      >
+        Price of the main cryptocurrencies by Market Capitalization.
+      </h3>
+    </section>
+    <section
+      class="overflow-x-scroll 
+ sm:overflow-x-auto sm:w-10/12 mb-10"
+    >
+      <table
+        class="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen"
+      >
+        <thead
+          class="border-b-[2px] border-[#4d51bb]"
+        >
+          <tr>
+            <td
+              class="table--head px-0 w-5 h-auto"
+            />
+            <td
+              class="table--head px-3 text-left"
+            >
+              #
+            </td>
+            <td
+              class="table--head pl-[32px]"
+            >
+              Coin
+            </td>
+            <td
+              class="table--head min-w-[170px]"
+            >
+              Price
+            </td>
+            <td
+              class="table--head"
+            >
+              1h
+            </td>
+            <td
+              class="table--head"
+            >
+              24h
+            </td>
+            <td
+              class="table--head"
+            >
+              7d
+            </td>
+            <td
+              class="table--head"
+            >
+              Market Cap.
+            </td>
+          </tr>
+        </thead>
+        <tbody
+          class="min-h-screen"
+        >
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              1
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Bitcoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Bitcoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  BTC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $20,281.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.58
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -8.53
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              7.54
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $388,557,193,025.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              2
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Ethereum"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Ethereum
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ETH
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1,580.53
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.61
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.40
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.02
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $190,492,507,045.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              3
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Tether"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Tether
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  USDT
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.24
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.34
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.06
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $67,916,847,953.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              4
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="USD Coin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  USD Coin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  USDC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.10
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.21
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.07
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $51,366,680,091.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              5
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="BNB"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  BNB
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  BNB
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $277.52
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.08
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -3.83
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              5.11
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $45,341,134,912.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              6
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Binance USD"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Binance USD
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  BUSD
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.22
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.74
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.03
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $20,232,318,046.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              7
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="XRP"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png?1605778731"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  XRP
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  XRP
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.33
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.22
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.86
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              3.36
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $16,641,878,076.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              8
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Cardano"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Cardano
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ADA
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.47
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.36
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.35
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.02
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $15,858,388,598.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              9
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Solana"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Solana
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  SOL
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $33.41
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.86
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -9.50
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              8.01
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $11,805,713,625.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              10
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Polkadot"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Polkadot
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  DOT
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $7.13
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.51
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.09
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              3.51
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $8,214,072,002.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              11
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Dogecoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Dogecoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  DOGE
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.06
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.31
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -4.41
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.75
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $7,985,358,029.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              12
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Shiba Inu"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/11939/thumb/shiba.png?1622619446"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Shiba Inu
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  SHIB
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.31
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -2.87
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.93
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $7,238,579,220.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              13
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Lido Staked Ether"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png?1608607546"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Lido Staked Ether
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  STETH
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1,532.36
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.67
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.74
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              2.13
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $6,596,653,518.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              14
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Dai"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Dai
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  DAI
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.03
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.39
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.08
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $6,396,028,637.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              15
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Polygon"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Polygon
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  MATIC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.85
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.41
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.91
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.10
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $6,359,361,607.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              16
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="TRON"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png?1547035066"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  TRON
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  TRX
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.06
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.32
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -2.93
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.36
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $5,654,555,127.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              17
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Avalanche"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12559/thumb/coin-round-red.png?1604021818"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Avalanche
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  AVAX
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $19.05
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.43
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -8.66
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.40
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $5,634,303,398.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              18
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Wrapped Bitcoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png?1548822744"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Wrapped Bitcoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  WBTC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $20,286.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.60
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -8.36
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              7.42
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $5,057,668,774.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              19
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Ethereum Classic"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/453/thumb/ethereum-classic-logo.png?1547034169"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Ethereum Classic
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ETC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $36.19
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.71
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -3.89
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.05
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $4,953,870,771.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              20
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Uniswap"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Uniswap
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  UNI
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $6.12
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.74
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.71
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.68
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $4,607,783,965.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              21
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="LEO Token"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/8418/thumb/leo-token.png?1558326215"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  LEO Token
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  LEO
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $4.95
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              3.87
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -3.21
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -3.82
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $4,584,302,125.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              22
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Litecoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Litecoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  LTC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $59.08
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.23
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -2.33
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              8.96
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $4,199,775,861.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              23
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Cosmos Hub"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/1481/thumb/cosmos_hub.png?1555657960"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Cosmos Hub
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ATOM
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $14.05
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.31
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -7.97
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              18.80
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $4,107,532,241.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              24
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="OKB"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/4463/thumb/WeChat_Image_20220118095654.png?1642471050"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  OKB
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  OKB
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $15.29
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.34
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.19
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              7.20
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $3,919,082,441.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              25
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="NEAR Protocol"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/10365/thumb/near_icon.png?1601359077"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  NEAR Protocol
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  NEAR
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $4.46
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.88
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -10.11
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              9.34
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $3,486,433,158.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              26
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="FTX"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/9026/thumb/F.png?1609051564"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  FTX
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  FTT
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $25.98
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.48
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -7.38
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.08
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $3,481,452,266.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              27
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Chainlink"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png?1547034700"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Chainlink
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  LINK
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $7.13
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.73
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.22
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              6.49
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $3,327,721,068.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              28
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Cronos"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/7310/thumb/oCw2s3GI_400x400.jpeg?1645172042"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Cronos
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  CRO
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.11
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.55
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -7.63
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -1.15
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,808,700,554.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              29
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Stellar"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png?1552356157"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Stellar
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  XLM
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.11
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.02
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.29
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.95
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,663,975,285.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              30
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Monero"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png?1547033729"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Monero
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  XMR
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $145.57
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.04
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -9.76
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.03
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,643,891,879.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              31
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Terra Luna Classic"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/8284/thumb/01_LunaClassic_color.png?1653547790"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Terra Luna Classic
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  LUNC
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.00
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -1.63
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              15.15
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -7.62
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,459,474,626.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              32
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Bitcoin Cash"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/780/thumb/bitcoin-cash-circle.png?1594689492"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Bitcoin Cash
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  BCH
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $118.49
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.61
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.66
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.99
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,269,508,994.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              33
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Algorand"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/4380/thumb/download.png?1547039725"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Algorand
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ALGO
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.30
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.42
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.38
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.39
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $2,065,538,895.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              34
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Flow"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/13446/thumb/5f6294c0c7a8cda55cb1c936_Flow_Wordmark.png?1631696776"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Flow
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  FLOW
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.86
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              1.25
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -9.08
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              3.85
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,922,329,610.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              35
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="VeChain"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/1167/thumb/VeChain-Logo-768x725.png?1547035194"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  VeChain
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  VET
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.02
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.43
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.40
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              2.85
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,717,875,237.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              36
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Internet Computer"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/14495/thumb/Internet_Computer_logo.png?1620703073"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Internet Computer
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  ICP
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $6.43
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.60
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.39
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              2.94
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,674,180,648.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              37
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Filecoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12817/thumb/filecoin.png?1602753933"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Filecoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  FIL
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $5.94
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.74
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.73
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              5.79
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,666,112,623.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              38
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="ApeCoin"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/24383/thumb/apecoin.jpg?1647476455"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  ApeCoin
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  APE
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $5.19
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.08
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -3.87
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              20.19
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,637,254,130.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              39
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Hedera"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/3688/thumb/hbar.png?1637045634"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Hedera
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  HBAR
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.07
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.77
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.83
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              10.94
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,493,627,239.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              40
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="EOS"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/738/thumb/eos-eos-logo.png?1547034481"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  EOS
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  EOS
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.47
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.83
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -9.98
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              4.82
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,482,652,959.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              41
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Chain"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/24210/thumb/Chain_icon_200x200.png?1646895054"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Chain
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  XCN
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.07
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.06
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.91
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.60
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,482,466,279.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              42
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Frax"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/13422/thumb/frax_logo.png?1608476506"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Frax
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  FRAX
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.12
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.02
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.18
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,467,511,997.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              43
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Tezos"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/976/thumb/Tezos-logo.png?1547034862"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Tezos
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  XTZ
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.54
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.21
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -4.91
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              7.42
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,387,142,291.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              44
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Quant"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/3370/thumb/5ZOu7brX_400x400.jpg?1612437252"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Quant
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  QNT
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $99.91
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.86
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -4.49
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              10.23
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,340,091,574.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              45
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Decentraland"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/878/thumb/decentraland-mana.png?1550108745"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Decentraland
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  MANA
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.74
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.56
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -4.99
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -0.38
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,335,507,164.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              46
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="The Sandbox"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12129/thumb/sandbox_logo.jpg?1597397942"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  The Sandbox
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  SAND
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $0.89
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.40
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.46
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.58
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,330,809,832.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              47
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Axie Infinity"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/13029/thumb/axie_infinity_logo.png?1604471082"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Axie Infinity
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  AXS
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $13.32
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.67
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -4.00
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.95
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,201,349,472.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              48
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Aave"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12645/thumb/AAVE.png?1601374110"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Aave
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  AAVE
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $84.00
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.71
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -6.48
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.29
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,182,491,176.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              49
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Lido DAO"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/13573/thumb/Lido_DAO.png?1609873644"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Lido DAO
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  LDO
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $1.84
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.85
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -5.95
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -1.34
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,137,253,533.00
+            </td>
+          </tr>
+          <tr
+            class="table--body__line pt-4"
+          >
+            <td
+              class="table--body w-[35px] mr-15"
+            >
+              <span>
+                <svg
+                  class="w-5 fill-[none]"
+                  data-testid="favorite-crypto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 0 0 .95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 0 0-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 0 0-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 0 0 .951-.69l1.519-4.674z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+            </td>
+            <td
+              class="table--body text-left
+ text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
+            >
+              50
+            </td>
+            <td
+              class="table--body table--body__coin"
+            >
+              <section
+                class="grid grid-cols-[auto_1fr] auto-rows-max"
+              >
+                <img
+                  alt="Elrond"
+                  class="mx-auto mt-auto"
+                  height="25"
+                  src="https://assets.coingecko.com/coins/images/12335/thumb/elrond3_360.png?1626341589"
+                  style="user-select: none;"
+                  width="25"
+                />
+                <a
+                  class="row-span-2 w-max flex 
+ items-center pl-3 max-w-[150px] font-bold 
+ break-words overflow-scroll sm:overflow-hidden"
+                  style="user-select: none;"
+                >
+                  Elrond
+                </a>
+                <p
+                  class="text-[10px] text-center 
+ text-dark-purple-neko font-bold max-w-[auto] break-words"
+                >
+                  EGLD
+                </p>
+              </section>
+            </td>
+            <td
+              class="table--body overflow-scroll sm:overflow-auto"
+            >
+              $49.31
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.57
+              %
+            </td>
+            <td
+              class="table--body  text-red-600"
+            >
+              -2.51
+              %
+            </td>
+            <td
+              class="table--body  text-green-500"
+            >
+              0.95
+              %
+            </td>
+            <td
+              class="table--body"
+            >
+              $1,131,661,088.00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div
+        class="w-full flex justify-center mt-2 space-x-10"
+      >
+        
+        <span>
+          Page 
+          1
+        </span>
+        <svg
+          class="fill-purple-neko  cursor-pointer  w-10 text-xl"
+          data-testid="next-button"
+          fill="currentColor"
+          height="1em"
+          role="button"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M6.23 20.23L8 22l10-10L8 2 6.23 3.77 14.46 12z"
+          />
+        </svg>
+      </div>
+    </section>
+  </section>
+</div>
+`;

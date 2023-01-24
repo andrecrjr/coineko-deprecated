@@ -1,10 +1,10 @@
 import { MenuOptions } from './menu';
 import Cat from '../../assets/cat.svg?component';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
+import { memo, useContext } from 'react';
 import { PaginationContext } from 'src/Contexts';
 
-export const Header = () => {
+const Header = () => {
 	const { setPagination } = useContext(PaginationContext);
 	return (
 		<header className="flex flex-col items-center">
@@ -50,3 +50,5 @@ export const Header = () => {
 		</header>
 	);
 };
+
+export default memo(Header);
