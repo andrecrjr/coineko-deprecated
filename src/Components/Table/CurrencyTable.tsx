@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { useState } from 'react';
 import { Currency } from 'src/Types';
 import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';

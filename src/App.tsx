@@ -1,5 +1,5 @@
 import Header from './Components/Header';
-import { memo, useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import { FilterGlobalContext, PaginationContext } from './Contexts';

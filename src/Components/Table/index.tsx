@@ -1,5 +1,3 @@
-import { memo, useContext } from 'react';
-
 import { CurrencyList } from 'src/Types';
 import Pagination from './Pagination';
 import CurrencyTable from './CurrencyTable';
