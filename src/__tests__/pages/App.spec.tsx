@@ -18,10 +18,10 @@ vi.mock('axios', async () => {
 	const create = vi.fn().mockImplementation(({ baseURL }) => {
 		return {
 			get: vi.fn().mockImplementation((url) => {
-				const apiFilterUrl = baseURL + url;
+				const apiFilterUrl: string = baseURL + url;
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=1&price_change_percentage=1h%2C24h%2C7d'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d'
 					)
 				) {
 					if (apiFilterUrl.includes('&category=non-fungible'))

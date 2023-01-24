@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import Table from 'src/Components/Table';
 import { FilterGlobalContext, PaginationContext } from 'src/Contexts';
-import { useFilter } from 'src/Hooks/useFilter';
-import { useFetch } from 'src/Hooks/useSWR';
+import { useFilter } from 'src/state/Hooks/useFilter';
+import { useFetch } from 'src/state/Hooks/useSWR';
 import { CurrencyList } from 'src/Types';
 import Cat from 'src/assets/cat.svg?component';
 

@@ -13,7 +13,7 @@ export const useFilter = ({
 			const queryStringFilter = convertFilterQueryString(
 				filterPaginationAndCategory
 			);
-			setFilter(`?${queryStringFilter}` || '');
+			setFilter(`coins/markets?${queryStringFilter}` || '');
 		},
 		[filterDataObject]
 	);
