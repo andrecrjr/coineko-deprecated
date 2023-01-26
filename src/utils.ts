@@ -27,7 +27,7 @@ export const convertFilterQueryString = (
 
 export const storageObject = {
 	get: <T>(storageKey: string): T => {
-		const data = localStorage.getItem(storageKey) || '[]';
+		const data = localStorage.getItem(storageKey) || JSON.stringify([]);
 		return JSON.parse(data);
 	},
 	set: (storageKey: string, setData: string[]): boolean => {
