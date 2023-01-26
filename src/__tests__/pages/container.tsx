@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { PaginationContext } from 'src/Contexts';
+import { PaginationContext } from 'src/state/Contexts';
 import { PaginationState } from 'src/Types';
 
 export const ContainerWrapper = ({ children }: { children: JSX.Element }) => {

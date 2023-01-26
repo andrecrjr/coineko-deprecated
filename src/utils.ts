@@ -24,3 +24,27 @@ export const convertFilterQueryString = (
 	).toString();
 	return filterResult;
 };
+
+export const storageObject = {
+	get: <T>(storageKey: string): T => {
+		const data = localStorage.getItem(storageKey) || '[]';
+		return JSON.parse(data);
+	},
+	set: (storageKey: string, setData: string[]): boolean => {
+		if (!setData) throw new Error('No data to set in localstorage');
+		localStorage.setItem(storageKey, JSON.stringify(setData));
+		return true;
+	}
+};
+
+// export const addToPortfolio = (newData: object | null) => {
+// 	if (newData) {
+// 		const portfolioData = storageObject.get<[]>('portfolio');
+// 		storageObject.set(
+// 			'portfolio',
+// 			JSON.stringify([portfolioData?.map((item) => item), newData])
+// 		);
+// 		return true;
+// 	}
+// 	return false;
+// };

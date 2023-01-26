@@ -1,3 +1,4 @@
+import { Dispatch } from 'react';
 import currencyList from './currencyListApi.json';
 
 export type PageCurrencyQuery = {
@@ -22,4 +23,9 @@ export type PaginationState = {
 export type Pagination = {
 	page: PaginationState;
 	setPagination: React.Dispatch<React.SetStateAction<PaginationState>>;
+};
+
+export type PortfolioType = {
+	userCurrency: string[] | null;
+	setPortfolio: Dispatch<{ type: string; payload: string }>;
 };

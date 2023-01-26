@@ -1,5 +1,6 @@
 import { createContext } from 'react';
-import { PageCurrencyQuery, Pagination } from 'src/Types';
+import { PageCurrencyQuery, Pagination, PortfolioType } from 'src/Types';
+import { storageObject } from 'src/utils';
 
 export const PaginationContext = createContext<Pagination>({
 	page: {
@@ -22,4 +23,9 @@ export const FilterGlobalContext = createContext<PageCurrencyQuery>({
 	sparkline: 'false',
 	price_change_percentage: '1h,24h,7d',
 	category: 'cryptocurrency'
+});
+
+export const PortfolioContext = createContext<PortfolioType>({
+	userCurrency: storageObject.get('portfolio') || [],
+	setPortfolio: () => null
 });

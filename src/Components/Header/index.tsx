@@ -2,7 +2,7 @@ import { MenuOptions } from './menu';
 import Cat from '../../assets/cat.svg?component';
 import { Link } from 'react-router-dom';
 import { memo, useContext } from 'react';
-import { PaginationContext } from 'src/Contexts';
+import { PaginationContext } from 'src/state/Contexts';
 
 const Header = () => {
 	const { setPagination } = useContext(PaginationContext);

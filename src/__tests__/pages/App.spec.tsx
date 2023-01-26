@@ -9,7 +9,7 @@ import { AppRoutes } from '../../App';
 import { describe, expect, beforeEach, vi, it } from 'vitest';
 import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
 import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
-import cryptoNftListMockPageOne from '../../__mocks__/nftPageOneMock.mock.json';
+import cryptoNftListMockPageOne from 'src/__mocks__/nftPageOneMock.mock.json';
 import { ContainerWrapper } from './container';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));

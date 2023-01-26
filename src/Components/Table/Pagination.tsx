@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
-import { PaginationContext } from 'src/Contexts';
+import { PaginationContext } from 'src/state/Contexts';
 
 function Pagination() {
 	const { page, setPagination } = useContext(PaginationContext);
