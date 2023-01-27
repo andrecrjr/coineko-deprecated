@@ -57,7 +57,7 @@ describe('Portfolio page', () => {
 			'bitcoin',
 			'banano'
 		]);
-		render(
+		const { container } = render(
 			<ContainerWrapper>
 				<PortfolioPage />
 			</ContainerWrapper>
@@ -66,5 +66,6 @@ describe('Portfolio page', () => {
 		expect((await screen.findByText('Bitcoin')).textContent).toBe('Bitcoin');
 		expect((await screen.findByText('Ethereum')).textContent).toBe('Ethereum');
 		expect((await screen.findByText('Banano')).textContent).toBe('Banano');
+		expect(container.children[0]).toMatchSnapshot();
 	});
 });
