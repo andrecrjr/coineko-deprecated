@@ -11,7 +11,7 @@ describe('Unit tests for Utils', () => {
 			expect(local).toHaveLength(2);
 			expect(local[0]).toBe('bitcoin');
 		});
-		it('should return empty from storageObject utils', () => {
+		it('should return empty array from storageObject get', () => {
 			vi.spyOn(Storage.prototype, 'getItem').mockReturnValue(null);
 			const local = storageObject.get<string[]>('portfolio');
 

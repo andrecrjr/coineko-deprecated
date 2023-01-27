@@ -26,6 +26,6 @@ export const FilterGlobalContext = createContext<PageCurrencyQuery>({
 });
 
 export const PortfolioContext = createContext<PortfolioType>({
-	userCurrency: storageObject.get('portfolio') || [],
+	userCurrency: storageObject.get('portfolio'),
 	setPortfolio: () => null
 });

@@ -20,7 +20,7 @@ function App() {
 
 	const [portfolio, dispatchPortfolio] = useReducer(
 		PortfolioReducer,
-		storageObject.get<string[]>('portfolio') || []
+		storageObject.get<string[]>('portfolio')
 	);
 
 	return (
