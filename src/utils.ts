@@ -37,14 +37,10 @@ export const storageObject = {
 	}
 };
 
-// export const addToPortfolio = (newData: object | null) => {
-// 	if (newData) {
-// 		const portfolioData = storageObject.get<[]>('portfolio');
-// 		storageObject.set(
-// 			'portfolio',
-// 			JSON.stringify([portfolioData?.map((item) => item), newData])
-// 		);
-// 		return true;
-// 	}
-// 	return false;
-// };
+export const addToPortfolio = (newData: string | null) => {
+	const portfolioData = storageObject.get<[]>('portfolio');
+	if (newData) {
+		return [...portfolioData, newData];
+	}
+	return [...portfolioData];
+};

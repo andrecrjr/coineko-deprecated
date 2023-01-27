@@ -6,11 +6,12 @@ import {
 	waitFor
 } from '@testing-library/react';
 import { AppRoutes } from '../../App';
-import { describe, expect, beforeEach, vi, it } from 'vitest';
+import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
 import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
 import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
 import cryptoNftListMockPageOne from 'src/__mocks__/nftPageOneMock.mock.json';
 import { ContainerWrapper } from './container';
+import { storageObject } from 'src/utils';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));
 
@@ -46,16 +47,17 @@ vi.mock('../../Hooks/useFilter', () => {
 });
 
 describe('Main App test', () => {
-	let mainApp: RenderResult;
-	beforeEach(() => {
-		mainApp = render(<AppRoutes />, { wrapper: ContainerWrapper });
-	});
-	it('should show title', async () => {
-		expect(screen.getByText(/Coineko/i)).toBeDefined();
+	afterEach(() => {
 		vi.clearAllMocks();
 	});
 
+	it('should show title', async () => {
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
+		expect(screen.getByText(/Coineko/i)).toBeDefined();
+	});
+
 	it('should list one crypto', async () => {
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
 		expect((await screen.findByText('Tether')).textContent).toBe('Tether');
 		expect((await screen.findByText('BTC')).textContent).toBe('BTC');
 		expect((await screen.findByText('BTC')).textContent).not.toBe('ETH');
@@ -65,9 +67,12 @@ describe('Main App test', () => {
 	});
 
 	it('should snap all cryptos in home', () => {
-		expect(mainApp.container.children[0]).toMatchSnapshot();
+		const { container } = render(<AppRoutes />, { wrapper: ContainerWrapper });
+		expect(container.children[0]).toMatchSnapshot();
 	});
+
 	it('should go to page two', async () => {
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
 		const buttonNextPage = await screen.findByTestId('next-button');
 		fireEvent.click(buttonNextPage);
 
@@ -83,6 +88,7 @@ describe('Main App test', () => {
 	});
 
 	it('should go to page one from page two', async () => {
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
 		const buttonNextPage = await screen.findByTestId('next-button');
 		fireEvent.click(buttonNextPage);
 		await waitFor(async () => {
@@ -93,8 +99,37 @@ describe('Main App test', () => {
 		});
 	});
 
+	it('should already had starred cryptocurrency in portfolio', async () => {
+		vi.spyOn(storageObject, 'get').mockReturnValue([
+			'bitcoin',
+			'ethereum',
+			'eos'
+		]);
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
+		const cryptoButtons = await screen.findAllByTestId('favorite-crypto');
+
+		await waitFor(async () => {
+			cryptoButtons.forEach((button) => {
+				if (button.dataset.crypto === 'bitcoin') {
+					expect(button.classList.contains('fill-purple-neko')).toBeTruthy();
+				}
+				if (button.dataset.crypto === 'ethereum') {
+					expect(button.classList.contains('fill-purple-neko')).toBeTruthy();
+				}
+				if (button.dataset.crypto === 'tether') {
+					expect(button.classList.contains('fill-purple-neko')).toBeFalsy();
+				}
+				if (button.dataset.crypto === 'eos') {
+					expect(button.classList.contains('fill-[none]')).toBeFalsy();
+				}
+			});
+		});
+	});
+
 	it('should go to another category page', async () => {
+		render(<AppRoutes />, { wrapper: ContainerWrapper });
 		const nftButton = await screen.findByTestId('button-nft');
+
 		fireEvent.click(nftButton);
 
 		await waitFor(async () => {
@@ -109,12 +144,5 @@ describe('Main App test', () => {
 			expect(flowPage.textContent).toBe('Flow');
 			expect(apePage.textContent).toBe('ApeCoin');
 		});
-	});
-
-	it('should favorite a currency', async () => {
-		const buttonApp = await screen.findAllByTestId('favorite-crypto');
-		fireEvent.click(buttonApp[0]);
-		expect(buttonApp[0].classList.contains('fill-purple-neko')).toBeTruthy();
-		expect(buttonApp[0].classList.contains('fill-none')).toBeFalsy();
 	});
 });

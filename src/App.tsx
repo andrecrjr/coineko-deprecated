@@ -11,6 +11,7 @@ import { PaginationState } from './Types';
 import TablePage from './Page/TablePage';
 import { PortfolioReducer } from './state/Reducers/portfolio';
 import { storageObject } from './utils';
+import { PortfolioPage } from './Page/PortfolioPage';
 
 function App() {
 	const [page, setPagination] = useState<PaginationState>({
@@ -51,41 +52,44 @@ export const AppRoutes = () => {
 	return (
 		<div className="App">
 			<Header />
-			<Routes>
-				<Route
-					path="/"
-					element={
-						<TablePage description="Price of the main cryptocurrencies by Market Capitalization." />
-					}
-				/>
-				<Route
-					path="nft"
-					element={
-						<TablePage
-							description="Ranking of NFT price by Market Capitalization."
-							category={'non-fungible-tokens-nft'}
-						/>
-					}
-				/>
-				<Route
-					path="de-fi"
-					element={
-						<TablePage
-							description="Ranking of De-Fi prices by Market Capitalization."
-							category={'decentralized-finance-defi'}
-						/>
-					}
-				/>
-				<Route
-					path="exchange"
-					element={
-						<TablePage
-							description="Price of cryptocurrencies exchange by Market Capitalization."
-							category={'exchange-based-tokens'}
-						/>
-					}
-				/>
-			</Routes>
+			<section className="flex flex-col justify-center sm:items-center ml-2 sm:ml-0 relative">
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<TablePage description="Price of the main cryptocurrencies by Market Capitalization." />
+						}
+					/>
+					<Route
+						path="nft"
+						element={
+							<TablePage
+								description="Ranking of NFT price by Market Capitalization."
+								category={'non-fungible-tokens-nft'}
+							/>
+						}
+					/>
+					<Route
+						path="de-fi"
+						element={
+							<TablePage
+								description="Ranking of De-Fi prices by Market Capitalization."
+								category={'decentralized-finance-defi'}
+							/>
+						}
+					/>
+					<Route
+						path="exchange"
+						element={
+							<TablePage
+								description="Price of cryptocurrencies exchange by Market Capitalization."
+								category={'exchange-based-tokens'}
+							/>
+						}
+					/>
+					<Route path="portfolio" element={<PortfolioPage />} />
+				</Routes>
+			</section>
 		</div>
 	);
 };

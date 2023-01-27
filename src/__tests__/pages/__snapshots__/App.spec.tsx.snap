@@ -200,6 +200,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="bitcoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -289,6 +290,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="ethereum"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -378,6 +380,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="tether"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -467,6 +470,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="usd-coin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -556,6 +560,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="binancecoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -645,6 +650,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="binance-usd"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -734,6 +740,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="ripple"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -823,6 +830,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="cardano"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -912,6 +920,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="solana"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1001,6 +1010,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="polkadot"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1090,6 +1100,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="dogecoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1179,6 +1190,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="shiba-inu"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1268,6 +1280,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="staked-ether"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1357,6 +1370,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="dai"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1446,6 +1460,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="matic-network"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1535,6 +1550,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="tron"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1624,6 +1640,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="avalanche-2"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1713,6 +1730,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="wrapped-bitcoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1802,6 +1820,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="ethereum-classic"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1891,6 +1910,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="uniswap"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -1980,6 +2000,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="leo-token"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2069,6 +2090,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="litecoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2158,6 +2180,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="cosmos"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2247,6 +2270,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="okb"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2336,6 +2360,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="near"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2425,6 +2450,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="ftx-token"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2514,6 +2540,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="chainlink"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2603,6 +2630,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="crypto-com-chain"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2692,6 +2720,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="stellar"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2781,6 +2810,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="monero"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2870,6 +2900,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="terra-luna"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -2959,6 +2990,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="bitcoin-cash"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3048,6 +3080,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="algorand"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3137,6 +3170,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="flow"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3226,6 +3260,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="vechain"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3315,6 +3350,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="internet-computer"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3404,6 +3440,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="filecoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3493,6 +3530,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="apecoin"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3582,6 +3620,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="hedera-hashgraph"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3671,6 +3710,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="eos"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3760,6 +3800,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="chain-2"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3849,6 +3890,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="frax"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -3938,6 +3980,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="tezos"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4027,6 +4070,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="quant-network"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4116,6 +4160,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="decentraland"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4205,6 +4250,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="the-sandbox"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4294,6 +4340,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="axie-infinity"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4383,6 +4430,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="aave"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4472,6 +4520,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="lido-dao"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"
@@ -4561,6 +4610,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               <span>
                 <svg
                   class="w-5 fill-[none]"
+                  data-crypto="elrond-erd-2"
                   data-testid="favorite-crypto"
                   fill="none"
                   stroke="currentColor"

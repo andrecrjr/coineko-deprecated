@@ -6,7 +6,7 @@ import { useGetPortfolio } from 'src/state/Hooks/usePortfolio';
 import { useFetch } from 'src/state/Hooks/useSWR';
 
 export const PortfolioPage = () => {
-	const { portfolioFilterQuery } = useGetPortfolio();
+	const { portfolioFilterQuery, portfolioItens } = useGetPortfolio();
 	const { data, isLoading } = useFetch<CurrencyList>(
 		portfolioFilterQuery,
 		'get'
@@ -20,10 +20,18 @@ export const PortfolioPage = () => {
 	};
 
 	return (
-		<section>
-			<h2>Your Portfolio</h2>
-			{!isLoading && data && data.length > 0 && <Table data={data} />}
+		<>
+			<section className="flex items-center mt-8 w-10/12 mb-2 md:mb-5 md:mt-10 ">
+				<h3 className="text-xs text-left items-start md:text-base">
+					Your Portfolio
+				</h3>
+			</section>
+			{!isLoading &&
+				data &&
+				data.length > 0 &&
+				portfolioItens &&
+				portfolioItens?.length > 0 && <Table data={data} />}
 			<NotLoaded />
-		</section>
+		</>
 	);
 };

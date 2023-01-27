@@ -1,7 +1,8 @@
-import { useState } from 'react';
 import { Currency } from 'src/Types';
-import { formatterMoney } from 'src/utils';
+import { addToPortfolio, formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
+import { useContext } from 'react';
+import { PortfolioContext } from 'src/state/Contexts';
 
 const ColumnCurrencyInfoGrid = ({
 	currency
@@ -49,23 +50,37 @@ const ColumnCurrencyInfoGrid = ({
 	);
 };
 
-export const CurrencyChild = ({ currency }: { currency?: Currency }) => {
-	const [Favorite, setFavorite] = useState(false);
+export const StarPortfolioCurrency = ({
+	currencyId
+}: {
+	currencyId: string;
+}) => {
+	const { userCurrency, setPortfolio } = useContext(PortfolioContext);
+	return (
+		<Star
+			className={`w-5 ${
+				userCurrency?.some((item) => item === currencyId)
+					? 'fill-purple-neko'
+					: 'fill-[none]'
+			}`}
+			onClick={(e) => {
+				e.preventDefault();
+				setPortfolio({ type: 'ADD_COIN', payload: currencyId });
+			}}
+			data-crypto={currencyId}
+			data-testid="favorite-crypto"
+		/>
+	);
+};
+
+export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 	return (
 		<tr className="table--body__line pt-4">
 			<td className="table--body w-[35px] mr-15">
 				<span>
-					<Star
-						className={`w-5 ${Favorite ? 'fill-purple-neko' : 'fill-[none]'}`}
-						onClick={(e) => {
-							e.preventDefault();
-							setFavorite((state) => !state);
-						}}
-						data-testid="favorite-crypto"
-					/>
+					<StarPortfolioCurrency currencyId={currency.id} />
 				</span>
 			</td>
-
 			<ColumnCurrencyInfoGrid currency={currency} />
 			<ColumnMoneyFormatter
 				classNames={'table--body overflow-scroll sm:overflow-auto'}
