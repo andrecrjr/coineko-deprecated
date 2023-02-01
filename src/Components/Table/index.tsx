@@ -12,7 +12,7 @@ const Table = ({ data }: Props) => {
 			className="overflow-x-scroll 
 				 sm:overflow-x-auto sm:w-10/12 mb-10"
 		>
-			<table className="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen">
+			<table className="bg-[#DEDEDE]  rounded-md table-auto w-full">
 				<thead className="border-b-[2px] border-[#4d51bb]">
 					<tr>
 						<td className="table--head px-0 w-5 h-auto"></td>
@@ -25,7 +25,7 @@ const Table = ({ data }: Props) => {
 						<td className="table--head">Market Cap.</td>
 					</tr>
 				</thead>
-				<tbody className="min-h-screen">
+				<tbody>
 					<CurrencyTable currencyList={data} />
 				</tbody>
 			</table>

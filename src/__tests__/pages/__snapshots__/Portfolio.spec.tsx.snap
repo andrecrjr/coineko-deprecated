@@ -16,7 +16,7 @@ HTMLCollection [
  sm:overflow-x-auto sm:w-10/12 mb-10"
   >
     <table
-      class="bg-[#DEDEDE]  rounded-md table-auto w-full min-h-screen"
+      class="bg-[#DEDEDE]  rounded-md table-auto w-full"
     >
       <thead
         class="border-b-[2px] border-[#4d51bb]"
@@ -62,9 +62,7 @@ HTMLCollection [
           </td>
         </tr>
       </thead>
-      <tbody
-        class="min-h-screen"
-      >
+      <tbody>
         <tr
           class="table--body__line pt-4"
         >
