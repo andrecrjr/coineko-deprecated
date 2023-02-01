@@ -65,6 +65,11 @@ export const StarPortfolioCurrency = ({
 			}`}
 			onClick={(e) => {
 				e.preventDefault();
+
+				if (userCurrency?.some((currency) => currency === currencyId)) {
+					setPortfolio({ type: 'REMOVE_COIN', payload: currencyId });
+					return;
+				}
 				setPortfolio({ type: 'ADD_COIN', payload: currencyId });
 			}}
 			data-crypto={currencyId}

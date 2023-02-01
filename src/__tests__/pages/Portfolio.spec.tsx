@@ -1,10 +1,16 @@
-import { render, screen, RenderResult } from '@testing-library/react';
+import {
+	render,
+	screen,
+	RenderResult,
+	fireEvent,
+	waitFor
+} from '@testing-library/react';
 
 import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
 import { ContainerWrapper } from './container';
 import { PortfolioPage } from 'src/Page/PortfolioPage';
 import portfolioMock from 'src/__mocks__/portfolio.mock.json';
-
+import portfolioRemovedMock from 'src/__mocks__/portfolioremoved.mock.json';
 import { storageObject } from 'src/utils';
 
 vi.mock('axios', async () => {
@@ -18,6 +24,13 @@ vi.mock('axios', async () => {
 					)
 				) {
 					return { data: portfolioMock };
+				}
+				if (
+					apiFilterUrl.includes(
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+					)
+				) {
+					return { data: portfolioRemovedMock };
 				}
 			})
 		};
@@ -66,6 +79,27 @@ describe('Portfolio page', () => {
 		expect((await screen.findByText('Bitcoin')).textContent).toBe('Bitcoin');
 		expect((await screen.findByText('Ethereum')).textContent).toBe('Ethereum');
 		expect((await screen.findByText('Banano')).textContent).toBe('Banano');
-		expect(container.children[0]).toMatchSnapshot();
+		expect(container.children).toMatchSnapshot();
+	});
+
+	it('should not render currency removed in portfolio', async () => {
+		vi.spyOn(storageObject, 'get').mockReturnValue([
+			'ethereum',
+			'bitcoin',
+			'banano'
+		]);
+		render(
+			<ContainerWrapper>
+				<PortfolioPage />
+			</ContainerWrapper>
+		);
+		const bitcoinFavoriteButton = (
+			await screen.findAllByTestId('favorite-crypto')
+		)[0];
+		fireEvent.click(bitcoinFavoriteButton);
+		//hack to wait the screen load
+		await waitFor(() => ({}));
+		expect(screen.queryByText(/Bitcoin/i)).toBeNull();
+		expect(screen.queryByText(/Banano/i)).not.toBeNull();
 	});
 });

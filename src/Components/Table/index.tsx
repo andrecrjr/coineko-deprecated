@@ -29,7 +29,7 @@ const Table = ({ data }: Props) => {
 					<CurrencyTable currencyList={data} />
 				</tbody>
 			</table>
-			<Pagination />
+			{data?.length >= 50 && <Pagination />}
 		</section>
 	);
 };
