@@ -11,7 +11,6 @@ import TablePage from './Page/TablePage';
 import { PortfolioReducer } from './state/Reducers/portfolio';
 import { storageObject } from './utils';
 import { PortfolioPage } from './Page/PortfolioPage';
-import MyChart from './Components/ChartTable';
 import { Main } from './Page/Main';
 
 function App() {
@@ -88,7 +87,6 @@ export const AppRoutes = () => {
 				/>
 				<Route path="portfolio" element={<PortfolioPage />} />
 			</Route>
-			<Route path="/chart" element={<MyChart />} />
 		</Routes>
 	);
 };
