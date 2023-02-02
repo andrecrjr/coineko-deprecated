@@ -1,12 +1,6 @@
-import {
-	render,
-	screen,
-	RenderResult,
-	fireEvent,
-	waitFor
-} from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 
-import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
+import { describe, expect, vi, it } from 'vitest';
 import { ContainerWrapper } from './container';
 import { PortfolioPage } from 'src/Page/PortfolioPage';
 import portfolioMock from 'src/__mocks__/portfolio.mock.json';

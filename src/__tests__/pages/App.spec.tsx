@@ -1,12 +1,6 @@
-import {
-	render,
-	screen,
-	RenderResult,
-	fireEvent,
-	waitFor
-} from '@testing-library/react';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { AppRoutes } from '../../App';
-import { describe, expect, beforeEach, vi, it, afterEach } from 'vitest';
+import { describe, expect, vi, it, afterEach } from 'vitest';
 import cryptoListMock from '../../__mocks__/cryptocurrency.mock.json';
 import cryptoListMockPageTwo from '../../__mocks__/cryptocurrencyPageTwo.mock.json';
 import cryptoNftListMockPageOne from 'src/__mocks__/nftPageOneMock.mock.json';

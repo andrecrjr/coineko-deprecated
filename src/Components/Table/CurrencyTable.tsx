@@ -1,5 +1,5 @@
 import { Currency } from 'src/Types';
-import { addToPortfolio, formatterMoney } from 'src/utils';
+import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
 import { useContext } from 'react';
 import { PortfolioContext } from 'src/state/Contexts';
