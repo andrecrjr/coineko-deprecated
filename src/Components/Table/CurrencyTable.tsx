@@ -20,7 +20,7 @@ const ColumnCurrencyInfoGrid = ({
 				{currency?.market_cap_rank || '...'}
 			</td>
 			<td className="table--body table--body__coin">
-				<section className="grid grid-cols-[auto_1fr] auto-rows-max">
+				<section className="grid grid-cols-[1fr_100px] auto-rows-max">
 					<img
 						src={`${
 							currency?.image.replace('large', 'thumb') ||
@@ -34,7 +34,7 @@ const ColumnCurrencyInfoGrid = ({
 					/>
 					<a
 						className="row-span-2 w-max flex 
-                            items-center pl-3 max-w-[150px] font-bold 
+                            items-center pl-1 w-auto font-bold 
                              break-words overflow-scroll sm:overflow-hidden"
 						style={{ userSelect: 'none' }}
 					>
@@ -123,14 +123,16 @@ const ColumnMoneyFormatter = ({
 }) => {
 	return (
 		<td className={classNames}>
-			{formatterMoney(
-				'en-US',
-				{
-					style: 'currency',
-					currency: 'USD'
-				},
-				formatPrice
-			)}
+			<p className="flex">
+				{formatterMoney(
+					'en-US',
+					{
+						style: 'currency',
+						currency: 'USD'
+					},
+					formatPrice
+				)}
+			</p>
 		</td>
 	);
 };
