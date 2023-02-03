@@ -12,7 +12,6 @@ import { PortfolioReducer } from './state/Reducers/portfolio';
 import { storageObject } from './utils';
 import { PortfolioPage } from './Page/PortfolioPage';
 import { Main } from './Page/Main';
-import MyChart from './Components/Charts';
 
 function App() {
 	const [page, setPagination] = useState<PaginationState>({

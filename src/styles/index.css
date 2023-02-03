@@ -10,12 +10,12 @@
 	}
 	.table--head {
 		@apply text-dark-purple-neko font-bold text-[0.77rem] py-[0.77rem] font-roboto;
-		@apply sm:text-[16px];
+		@apply sm:text-[0.77rem];
 	}
 
 	.table--body {
 		@apply text-center text-[0.90rem] font-roboto font-bold pt-4;
-		@apply lg:pl-8 lg:text-left;
+		@apply lg:text-left;
 	}
 	.table--body:last-child {
 		@apply pr-5;
@@ -23,7 +23,7 @@
 
 	.table--body__coin {
 		@apply text-left text-[0.70rem] text-[#272727] leading-5 w-[180px];
-		@apply lg:pl-0;
+		@apply lg:pl-0 sm:w-auto;
 	}
 
 	.table--body__border{

@@ -3,7 +3,6 @@ import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
 import { useContext } from 'react';
 import { PortfolioContext } from 'src/state/Contexts';
-import MyChart from '../Charts';
 import Sparkline from '../Charts';
 
 const ColumnCurrencyInfoGrid = ({
@@ -20,7 +19,7 @@ const ColumnCurrencyInfoGrid = ({
 				{currency?.market_cap_rank || '...'}
 			</td>
 			<td className="table--body table--body__coin">
-				<section className="grid grid-cols-[1fr_100px] auto-rows-max">
+				<section className="grid grid-cols-[1fr_100px] sm:grid-cols-[30px_auto] md:auto-rows-max">
 					<img
 						src={`${
 							currency?.image.replace('large', 'thumb') ||
@@ -33,7 +32,7 @@ const ColumnCurrencyInfoGrid = ({
 						alt={currency?.name}
 					/>
 					<a
-						className="row-span-2 w-max flex 
+						className="row-span-2 flex 
                             items-center pl-1 w-auto font-bold 
                              break-words overflow-scroll sm:overflow-hidden"
 						style={{ userSelect: 'none' }}
@@ -52,42 +51,36 @@ const ColumnCurrencyInfoGrid = ({
 	);
 };
 
-export const StarPortfolioCurrency = ({
-	currencyId
-}: {
-	currencyId: string;
-}) => {
+const StarPortfolioCurrency = ({ currencyId }: { currencyId: string }) => {
 	const { userCurrency, setPortfolio } = useContext(PortfolioContext);
 	return (
-		<Star
-			className={`w-5 ${
-				userCurrency?.some((item) => item === currencyId)
-					? 'fill-purple-neko'
-					: 'fill-[none]'
-			}`}
-			onClick={(e) => {
-				e.preventDefault();
+		<td className="table--body w-[35px] pl-2 sm:pl-6">
+			<Star
+				className={`w-6 ${
+					userCurrency?.some((item) => item === currencyId)
+						? 'fill-purple-neko'
+						: 'fill-[none]'
+				}`}
+				onClick={(e) => {
+					e.preventDefault();
 
-				if (userCurrency?.some((currency) => currency === currencyId)) {
-					setPortfolio({ type: 'REMOVE_COIN', payload: currencyId });
-					return;
-				}
-				setPortfolio({ type: 'ADD_COIN', payload: currencyId });
-			}}
-			data-crypto={currencyId}
-			data-testid="favorite-crypto"
-		/>
+					if (userCurrency?.some((currency) => currency === currencyId)) {
+						setPortfolio({ type: 'REMOVE_COIN', payload: currencyId });
+						return;
+					}
+					setPortfolio({ type: 'ADD_COIN', payload: currencyId });
+				}}
+				data-crypto={currencyId}
+				data-testid="favorite-crypto"
+			/>
+		</td>
 	);
 };
 
-export const CurrencyChild = ({ currency }: { currency: Currency }) => {
+const CurrencyChild = ({ currency }: { currency: Currency }) => {
 	return (
 		<tr className="table--body__line pt-4">
-			<td className="table--body w-[35px] mr-15">
-				<span>
-					<StarPortfolioCurrency currencyId={currency.id} />
-				</span>
-			</td>
+			<StarPortfolioCurrency currencyId={currency.id} />
 			<ColumnCurrencyInfoGrid currency={currency} />
 			<ColumnMoneyFormatter
 				classNames={'table--body overflow-scroll sm:overflow-auto'}
@@ -107,9 +100,11 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 				classNames="table--body"
 				formatPrice={currency?.market_cap || 0}
 			/>
-			{currency.sparkline_in_7d?.price && (
-				<Sparkline datasetSpark={currency?.sparkline_in_7d.price} />
-			)}
+			<td className="table--body">
+				{currency.sparkline_in_7d?.price && (
+					<Sparkline datasetSpark={currency?.sparkline_in_7d.price} />
+				)}
+			</td>
 		</tr>
 	);
 };
