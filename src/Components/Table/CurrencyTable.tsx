@@ -3,6 +3,8 @@ import { formatterMoney } from 'src/utils';
 import Star from './star.svg?component';
 import { useContext } from 'react';
 import { PortfolioContext } from 'src/state/Contexts';
+import MyChart from '../Charts';
+import Sparkline from '../Charts';
 
 const ColumnCurrencyInfoGrid = ({
 	currency
@@ -105,6 +107,9 @@ export const CurrencyChild = ({ currency }: { currency: Currency }) => {
 				classNames="table--body"
 				formatPrice={currency?.market_cap || 0}
 			/>
+			{currency.sparkline_in_7d?.price && (
+				<Sparkline datasetSpark={currency?.sparkline_in_7d.price} />
+			)}
 		</tr>
 	);
 };

@@ -10,7 +10,7 @@ const Table = ({ data }: Props) => {
 	return (
 		<section
 			className="overflow-x-scroll 
-				 sm:overflow-x-auto sm:w-10/12 mb-10"
+				 sm:overflow-x-auto sm:w-12/12 mb-10"
 		>
 			<table className="bg-[#DEDEDE]  rounded-md table-auto w-full">
 				<thead className="border-b-[2px] border-[#4d51bb]">
@@ -23,6 +23,7 @@ const Table = ({ data }: Props) => {
 						<td className="table--head">24h</td>
 						<td className="table--head">7d</td>
 						<td className="table--head">Market Cap.</td>
+						<td className="table--head">Last 7 days</td>
 					</tr>
 				</thead>
 				<tbody>
