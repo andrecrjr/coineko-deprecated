@@ -35,7 +35,7 @@ function App() {
 							vs_currency: 'usd',
 							order: 'market_cap_desc',
 							per_page: '50',
-							sparkline: 'false',
+							sparkline: 'true',
 							page: '1',
 							price_change_percentage: '1h,24h,7d'
 						}}
@@ -87,6 +87,7 @@ export const AppRoutes = () => {
 				/>
 				<Route path="portfolio" element={<PortfolioPage />} />
 			</Route>
+			{/* <Route path="/chart" element={<MyChart />} /> */}
 		</Routes>
 	);
 };

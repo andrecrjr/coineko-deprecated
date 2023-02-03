@@ -6,7 +6,9 @@ import { PortfolioPage } from 'src/Page/PortfolioPage';
 import portfolioMock from 'src/__mocks__/portfolio.mock.json';
 import portfolioRemovedMock from 'src/__mocks__/portfolioremoved.mock.json';
 import { storageObject } from 'src/utils';
-
+vi.mock('react-chartjs-2', () => ({
+	Line: () => null
+}));
 vi.mock('axios', async () => {
 	const create = vi.fn().mockImplementation(({ baseURL }) => {
 		return {
@@ -14,14 +16,14 @@ vi.mock('axios', async () => {
 				const apiFilterUrl: string = baseURL + url;
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbitcoin%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbitcoin%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true'
 					)
 				) {
 					return { data: portfolioMock };
 				}
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true'
 					)
 				) {
 					return { data: portfolioRemovedMock };
@@ -70,7 +72,7 @@ describe('Portfolio page', () => {
 			</ContainerWrapper>
 		);
 
-		expect((await screen.findByText('Bitcoin')).textContent).toBe('Bitcoin');
+		expect((await screen.findByText(/Bitcoin/)).textContent).toBe('Bitcoin');
 		expect((await screen.findByText('Ethereum')).textContent).toBe('Ethereum');
 		expect((await screen.findByText('Banano')).textContent).toBe('Banano');
 		expect(container.children).toMatchSnapshot();

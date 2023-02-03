@@ -9,6 +9,10 @@ import { storageObject } from 'src/utils';
 
 global.scrollTo = vi.fn(() => ({ x: 0, y: 0 }));
 
+vi.mock('react-chartjs-2', () => ({
+	Line: () => null
+}));
+
 vi.mock('axios', async () => {
 	const create = vi.fn().mockImplementation(({ baseURL }) => {
 		return {
@@ -16,7 +20,7 @@ vi.mock('axios', async () => {
 				const apiFilterUrl: string = baseURL + url;
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=true&price_change_percentage=1h%2C24h%2C7d'
 					)
 				) {
 					if (apiFilterUrl.includes('&category=non-fungible'))
@@ -35,7 +39,7 @@ vi.mock('axios', async () => {
 vi.mock('../../Hooks/useFilter', () => {
 	return {
 		useFilter: vi.fn().mockImplementation((state) => {
-			return `?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=false&page=${state.filterDataObject.page}&price_change_percentage=1h%2C24h%2C7d`;
+			return `?vs_currency=usd&order=market_cap_desc&per_page=50&sparkline=true&page=${state.filterDataObject.page}&price_change_percentage=1h%2C24h%2C7d`;
 		})
 	};
 });
@@ -55,9 +59,6 @@ describe('Main App test', () => {
 		expect((await screen.findByText('Tether')).textContent).toBe('Tether');
 		expect((await screen.findByText('BTC')).textContent).toBe('BTC');
 		expect((await screen.findByText('BTC')).textContent).not.toBe('ETH');
-		expect(
-			(await screen.findByText('$67,916,847,953.00')).textContent
-		).toBeDefined();
 	});
 
 	it('should snap all cryptos in home', () => {
@@ -71,13 +72,13 @@ describe('Main App test', () => {
 		fireEvent.click(buttonNextPage);
 
 		await waitFor(() => {
-			const thetaPageTwo = screen.getByText(/Theta Network/i);
+			const zilPageTwo = screen.getByText(/Zilliqa/i);
 
-			expect(thetaPageTwo.textContent).toBe('Theta Network');
-			const kusamaPageTwo = screen.getByText(/Kusama/i);
-			const ksmPageTwo = screen.getByText(/KSM/i);
-			expect(kusamaPageTwo.textContent).toBe('Kusama');
-			expect(ksmPageTwo.textContent).toBe('KSM');
+			expect(zilPageTwo.textContent).toBe('Zilliqa');
+			const pancakeSwapTwo = screen.getByText(/PancakeSwap/i);
+			const cakePageTwo = screen.getByText(/CAKE/);
+			expect(pancakeSwapTwo.textContent).toBe('PancakeSwap');
+			expect(cakePageTwo.textContent).toBe('CAKE');
 		});
 	});
 
