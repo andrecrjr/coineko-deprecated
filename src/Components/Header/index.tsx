@@ -9,7 +9,7 @@ const Header = () => {
 	const { setPagination } = useContext(PaginationContext);
 	return (
 		<header className="flex flex-col items-center">
-			<section className="sm:ml-4 sm:py-2 flex w-10/12 justify-between">
+			<section className="sm:ml-4 sm:py-2 flex w-10/12 justify-between flex-col sm:flex-row">
 				<h1 className="text-4xl flex items-center" title="coineko">
 					coineko
 					<Cat className="inline self-center w-5 sm:w-10" />

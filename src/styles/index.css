@@ -34,7 +34,7 @@
 		@apply border-b-[24px] border-[transparent];
 	}
 	.search--box{
-		@apply border-2;
+		@apply w-full sm:w-6/12 mb-3 mt-3;
 	}
 	.suggest--box{
 		@apply absolute bg-white w-full z-10;
