@@ -32,7 +32,7 @@ describe('Header test', () => {
 		expect(input.value).toBe('Bit');
 	});
 
-	it('should complete with data in searchbox', async () => {
+	it('should render with auto complete in searchbox', async () => {
 		const { container } = render(<SearchBar />);
 		const input = screen.getByPlaceholderText(
 			'Search Currency or Exchange'

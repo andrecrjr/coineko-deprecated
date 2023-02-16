@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`Header test > should complete with data in searchbox 1`] = `
+exports[`Header test > should render with auto complete in searchbox 1`] = `
 HTMLCollection [
   <form>
     <input
