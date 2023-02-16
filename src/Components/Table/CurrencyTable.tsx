@@ -102,7 +102,15 @@ const CurrencyChild = ({ currency }: { currency: Currency }) => {
 			/>
 			<td className="table--body">
 				{currency.sparkline_in_7d?.price && (
-					<Sparkline datasetSpark={currency?.sparkline_in_7d.price} />
+					<Sparkline
+						datasetSpark={currency?.sparkline_in_7d.price}
+						color={
+							currency?.price_change_percentage_1h_in_currency &&
+							currency?.price_change_percentage_1h_in_currency > 0
+								? 'green'
+								: 'red'
+						}
+					/>
 				)}
 			</td>
 		</tr>

@@ -4,13 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				roboto: 'Roboto',
+				roboto: 'Roboto'
 			},
 			colors: {
-				'purple-neko': '#9B9EFA',
-				'dark-purple-neko': '#6769AD',
-			},
-		},
+				'purple-neko': '#9472d4',
+				'dark-purple-neko': '#6769AD'
+			}
+		}
 	},
-	plugins: [],
+	plugins: []
 };
