@@ -3,7 +3,7 @@
 exports[`Header test > should render with auto complete in searchbox 1`] = `
 HTMLCollection [
   <form
-    class="relative"
+    class="relative w-full"
   >
     <input
       aria-label="search"
@@ -17,7 +17,23 @@ HTMLCollection [
       class="absolute top-0 right-0"
       type="submit"
     >
-      Search
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+        />
+      </svg>
     </button>
     <ul
       aria-autocomplete="list"
@@ -29,7 +45,7 @@ HTMLCollection [
         role="option"
       >
         <div
-          class="flex"
+          class="grid grid-cols-[25px_auto_auto] my-8 sm:my-3 mx-5 items-center"
         >
           <svg
             class="w-6 fill-[none]"
@@ -47,7 +63,15 @@ HTMLCollection [
               stroke-width="2"
             />
           </svg>
-          <h3>
+          <img
+            class="ml-4"
+            height="25"
+            src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png"
+            width="25"
+          />
+          <h3
+            class="text-sm break-before-auto overflow-hidden ml-4"
+          >
             Bitcoin
           </h3>
         </div>
@@ -57,7 +81,7 @@ HTMLCollection [
         role="option"
       >
         <div
-          class="flex"
+          class="grid grid-cols-[25px_auto_auto] my-8 sm:my-3 mx-5 items-center"
         >
           <svg
             class="w-6 fill-[none]"
@@ -75,7 +99,15 @@ HTMLCollection [
               stroke-width="2"
             />
           </svg>
-          <h3>
+          <img
+            class="ml-4"
+            height="25"
+            src="https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png"
+            width="25"
+          />
+          <h3
+            class="text-sm break-before-auto overflow-hidden ml-4"
+          >
             Wrapped Bitcoin
           </h3>
         </div>
@@ -85,7 +117,7 @@ HTMLCollection [
         role="option"
       >
         <div
-          class="flex"
+          class="grid grid-cols-[25px_auto_auto] my-8 sm:my-3 mx-5 items-center"
         >
           <svg
             class="w-6 fill-[none]"
@@ -103,7 +135,15 @@ HTMLCollection [
               stroke-width="2"
             />
           </svg>
-          <h3>
+          <img
+            class="ml-4"
+            height="25"
+            src="https://assets.coingecko.com/coins/images/780/thumb/bitcoin-cash-circle.png"
+            width="25"
+          />
+          <h3
+            class="text-sm break-before-auto overflow-hidden ml-4"
+          >
             Bitcoin Cash
           </h3>
         </div>
@@ -113,7 +153,7 @@ HTMLCollection [
         role="option"
       >
         <div
-          class="flex"
+          class="grid grid-cols-[25px_auto_auto] my-8 sm:my-3 mx-5 items-center"
         >
           <svg
             class="w-6 fill-[none]"
@@ -131,7 +171,15 @@ HTMLCollection [
               stroke-width="2"
             />
           </svg>
-          <h3>
+          <img
+            class="ml-4"
+            height="25"
+            src="https://assets.coingecko.com/coins/images/6799/thumb/BSV.png"
+            width="25"
+          />
+          <h3
+            class="text-sm break-before-auto overflow-hidden ml-4"
+          >
             Bitcoin SV
           </h3>
         </div>
