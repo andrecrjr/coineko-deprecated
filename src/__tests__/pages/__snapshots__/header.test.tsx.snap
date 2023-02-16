@@ -1,0 +1,51 @@
+// Vitest Snapshot v1
+
+exports[`Header test > should complete with data in searchbox 1`] = `
+HTMLCollection [
+  <form>
+    <input
+      aria-label="search"
+      name="search--currency"
+      placeholder="Search Currency or Exchange"
+      role="combobox"
+      type="text"
+      value="Bit"
+    />
+    <button
+      type="submit"
+    >
+      Search
+    </button>
+    <ul
+      aria-autocomplete="list"
+      class="suggest--box"
+      role="listbox"
+    >
+      <li
+        class="suggest--box__option"
+        role="option"
+      >
+        Bitcoin
+      </li>
+      <li
+        class="suggest--box__option"
+        role="option"
+      >
+        Wrapped Bitcoin
+      </li>
+      <li
+        class="suggest--box__option"
+        role="option"
+      >
+        Bitcoin Cash
+      </li>
+      <li
+        class="suggest--box__option"
+        role="option"
+      >
+        Bitcoin SV
+      </li>
+    </ul>
+  </form>,
+]
+`;

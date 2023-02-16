@@ -1,5 +1,6 @@
 import { Dispatch } from 'react';
 import currencyList from './currencyListApi.json';
+import searchMock from 'src/__mocks__/searchCrypto.mock.json';
 
 export type PageCurrencyQuery = {
 	vs_currency: string;
@@ -28,4 +29,18 @@ export type Pagination = {
 export type PortfolioType = {
 	userCurrency: string[] | null;
 	setPortfolio: Dispatch<{ type: string; payload: string }>;
+};
+
+export type CurrencyItem = {
+	id: string;
+	name: string;
+	api_symbol: string;
+	symbol: string;
+	market_cap_rank: number;
+	thumb: string;
+	large: string;
+};
+
+export type searchType = {
+	coins: CurrencyItem[];
 };
