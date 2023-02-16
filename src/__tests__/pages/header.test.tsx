@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { SearchBar } from 'src/Components/Header/SearchBar';
 import { describe, expect, it, vi } from 'vitest';
 import searchMock from 'src/__mocks__/searchCrypto.mock.json';

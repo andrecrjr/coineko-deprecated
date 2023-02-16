@@ -1,6 +1,5 @@
 import { Dispatch } from 'react';
 import currencyList from './currencyListApi.json';
-import searchMock from 'src/__mocks__/searchCrypto.mock.json';
 
 export type PageCurrencyQuery = {
 	vs_currency: string;

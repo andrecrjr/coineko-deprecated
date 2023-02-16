@@ -29,7 +29,7 @@ export const SearchBar = () => {
 };
 
 export const AutoComplete = ({ searchParam }: { searchParam: string }) => {
-	const { data, isLoading, error } = useFetch<searchType>(
+	const { data, isLoading } = useFetch<searchType>(
 		`search?query=${searchParam}`,
 		'get'
 	);
