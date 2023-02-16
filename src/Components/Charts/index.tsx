@@ -18,7 +18,13 @@ ChartJS.register(
 	Tooltip
 );
 
-function Sparkline({ datasetSpark }: { datasetSpark: number[] }) {
+function Sparkline({
+	datasetSpark,
+	color
+}: {
+	datasetSpark: number[];
+	color: string;
+}) {
 	return (
 		<Line
 			width={'120'}
@@ -28,7 +34,7 @@ function Sparkline({ datasetSpark }: { datasetSpark: number[] }) {
 				responsive: false,
 				elements: {
 					line: {
-						borderColor: '#6769AD',
+						borderColor: `${color || '#9472d4'}`,
 						borderWidth: 1
 					},
 					point: {
@@ -43,7 +49,7 @@ function Sparkline({ datasetSpark }: { datasetSpark: number[] }) {
 			}}
 			data={{
 				labels: datasetSpark.map((item) => item),
-				datasets: [{ data: datasetSpark, borderWidth: 1 }]
+				datasets: [{ data: datasetSpark, borderWidth: 0.8 }]
 			}}
 		/>
 	);
