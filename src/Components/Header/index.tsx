@@ -3,18 +3,18 @@ import Cat from '../../assets/cat.svg?component';
 import { Link } from 'react-router-dom';
 import { memo, useContext } from 'react';
 import { PaginationContext } from 'src/state/Contexts';
+import { SearchBar } from './SearchBar';
 
 const Header = () => {
 	const { setPagination } = useContext(PaginationContext);
 	return (
 		<header className="flex flex-col items-center">
-			<section className="ml-4 py-2 flex w-10/12">
-				<h1 className="text-4xl flex" title="coineko">
+			<section className="sm:ml-4 sm:py-2 flex w-10/12 justify-between">
+				<h1 className="text-4xl flex items-center" title="coineko">
 					coineko
-					<span>
-						<Cat className="w-10" />
-					</span>
+					<Cat className="inline self-center w-5 sm:w-10" />
 				</h1>
+				<SearchBar />
 			</section>
 			<nav
 				className="w-full bg-purple-neko overflow-x-scroll 

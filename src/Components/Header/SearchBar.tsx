@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
-import { searchType } from 'src/Types';
-import { useFetch } from 'src/state/Hooks/useSWR';
+import { useEffect, useState } from 'react';
+import { AutoComplete } from './Autocomplete';
 
 export const SearchBar = () => {
 	const [search, setSearch] = useState('');
 	const [suggestionItens, setSuggest] = useState<string>('');
+	useEffect(() => {
+		if (suggestionItens) {
+			setTimeout(() => {
+				setSuggest('');
+			}, 10000);
+		}
+	}, [suggestionItens]);
 
 	return (
-		<form>
+		<form className="relative">
 			<input
 				type="text"
-				name="search--currency"
+				className="search--box"
 				placeholder="Search Currency or Exchange"
 				value={search}
 				aria-label="search"
@@ -18,33 +24,13 @@ export const SearchBar = () => {
 				onChange={(e) => setSearch(e.target.value)}
 				onBlur={(e) => {
 					e.preventDefault();
-					//search after focus
 					setSuggest(e.target.value);
 				}}
 			/>
-			<button type="submit">Search</button>
+			<button type="submit" className="absolute top-0 right-0">
+				Search
+			</button>
 			{suggestionItens !== '' && <AutoComplete searchParam={suggestionItens} />}
 		</form>
 	);
-};
-
-export const AutoComplete = ({ searchParam }: { searchParam: string }) => {
-	const { data, isLoading } = useFetch<searchType>(
-		`search?query=${searchParam}`,
-		'get'
-	);
-	if (!isLoading)
-		return (
-			<ul className="suggest--box" role="listbox" aria-autocomplete="list">
-				{data &&
-					data.coins.map((item) => {
-						return (
-							<li role="option" key={item.id} className="suggest--box__option">
-								{item.name}
-							</li>
-						);
-					})}
-			</ul>
-		);
-	return <></>;
 };

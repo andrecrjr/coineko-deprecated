@@ -8,38 +8,54 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
     class="flex flex-col items-center"
   >
     <section
-      class="ml-4 py-2 flex w-10/12"
+      class="sm:ml-4 sm:py-2 flex w-10/12 justify-between"
     >
       <h1
-        class="text-4xl flex"
+        class="text-4xl flex items-center"
         title="coineko"
       >
         coineko
-        <span>
-          <svg
-            class="w-10"
-            fill="none"
-            viewBox="0 0 19 22"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <ellipse
-              cx="9.31419"
-              cy="13.5481"
-              fill="#9B9EFA"
-              rx="8.08082"
-              ry="7.75759"
-            />
-            <path
-              d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
-              fill="#9B9EFA"
-            />
-            <path
-              d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
-              fill="#9B9EFA"
-            />
-          </svg>
-        </span>
+        <svg
+          class="inline self-center w-5 sm:w-10"
+          fill="none"
+          viewBox="0 0 19 22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="9.31419"
+            cy="13.5481"
+            fill="#9B9EFA"
+            rx="8.08082"
+            ry="7.75759"
+          />
+          <path
+            d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
+            fill="#9B9EFA"
+          />
+          <path
+            d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
+            fill="#9B9EFA"
+          />
+        </svg>
       </h1>
+      <form
+        class="relative"
+      >
+        <input
+          aria-label="search"
+          class="search--box"
+          placeholder="Search Currency or Exchange"
+          role="combobox"
+          type="text"
+          value=""
+        />
+        <button
+          class="absolute top-0 right-0"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
     </section>
     <nav
       class="w-full bg-purple-neko overflow-x-scroll 

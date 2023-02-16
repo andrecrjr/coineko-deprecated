@@ -41,6 +41,8 @@ describe('Header test', () => {
 		fireEvent.blur(input);
 		const suggestBox = await screen.findAllByRole('option');
 		expect(suggestBox[0].textContent).toBe('Bitcoin');
+		expect(suggestBox[1].textContent).not.toBe('Ethereum');
+		expect(suggestBox[2].textContent).toBe('Bitcoin Cash');
 		expect(container.children).toMatchSnapshot();
 	});
 });

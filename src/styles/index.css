@@ -33,4 +33,10 @@
 	.table--body__line:last-child {
 		@apply border-b-[24px] border-[transparent];
 	}
+	.search--box{
+		@apply border-2;
+	}
+	.suggest--box{
+		@apply absolute bg-white w-full z-10;
+	}
 }
