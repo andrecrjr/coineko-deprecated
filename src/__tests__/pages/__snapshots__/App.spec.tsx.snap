@@ -8,42 +8,77 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
     class="flex flex-col items-center"
   >
     <section
-      class="ml-4 py-2 flex w-10/12"
+      class="sm:ml-4 sm:py-2 flex w-10/12 justify-between flex-col sm:flex-row"
     >
       <h1
-        class="text-4xl flex"
+        class="text-4xl flex items-center"
         title="coineko"
       >
         coineko
-        <span>
+        <svg
+          class="inline self-center w-5 sm:w-10"
+          fill="none"
+          viewBox="0 0 19 22"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="9.31419"
+            cy="13.5481"
+            fill="#9B9EFA"
+            rx="8.08082"
+            ry="7.75759"
+          />
+          <path
+            d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
+            fill="#9B9EFA"
+          />
+          <path
+            d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
+            fill="#9B9EFA"
+          />
+        </svg>
+      </h1>
+      <form
+        aria-label="on this page"
+        class="search"
+        role="search"
+      >
+        <input
+          aria-label="search"
+          class="search--box"
+          placeholder="Search Currency or Exchange"
+          role="searchbox"
+          type="text"
+          value=""
+        />
+        <button
+          class="absolute top-0 right-0 bottom-0 pr-5"
+          role="button"
+          tabindex="1"
+          type="submit"
+        >
           <svg
-            class="w-10"
-            fill="none"
-            viewBox="0 0 19 22"
+            fill="currentColor"
+            height="25"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="25"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <ellipse
-              cx="9.31419"
-              cy="13.5481"
-              fill="#9B9EFA"
-              rx="8.08082"
-              ry="7.75759"
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
             />
             <path
-              d="M15.492 0.781971L16.2141 9.45678L10.7818 8.10237L15.492 0.781971Z"
-              fill="#9B9EFA"
-            />
-            <path
-              d="M3.13631 0.781963L7.84647 8.10236L2.41421 9.45677L3.13631 0.781963Z"
-              fill="#9B9EFA"
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
             />
           </svg>
-        </span>
-      </h1>
+        </button>
+      </form>
     </section>
     <nav
-      class="w-full bg-purple-neko overflow-x-scroll 
- h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
+      class="w-full bg-purple-neko overflow-x-scroll  h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
     >
       <ul
         class="list-none flex self-center "
@@ -52,7 +87,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-cryptocurrency"
           >
             Cryptocurrency
@@ -62,7 +98,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/nft"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-nft"
           >
             NFT
@@ -72,7 +109,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/de-fi"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-defi"
           >
             DeFi
@@ -82,7 +120,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/exchange"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-exchange"
           >
             Exchange
@@ -92,7 +131,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/portfolio"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-portfolio"
           >
             Portfolio
@@ -182,12 +222,12 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
               7d
             </td>
             <td
-              class="table--head min-w-[170px] sm:min-w-[130px]"
+              class="table--head min-w-[170px] sm:min-w-[160px] md:min-w-[145px]"
             >
               Market Cap.
             </td>
             <td
-              class="table--head min-w-[150px] sm:min-w-[100px]"
+              class="table--head min-w-[auto] sm:min-w-[auto]"
             >
               Last 7 days
             </td>

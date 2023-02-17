@@ -1,9 +1,7 @@
 import { Currency } from 'src/Types';
 import { formatterMoney } from 'src/utils';
-import Star from './star.svg?component';
-import { useContext } from 'react';
-import { PortfolioContext } from 'src/state/Contexts';
 import Sparkline from '../Charts';
+import { StarPortfolioCurrency } from './Star';
 
 const ColumnCurrencyInfoGrid = ({
 	currency
@@ -51,36 +49,13 @@ const ColumnCurrencyInfoGrid = ({
 	);
 };
 
-const StarPortfolioCurrency = ({ currencyId }: { currencyId: string }) => {
-	const { userCurrency, setPortfolio } = useContext(PortfolioContext);
-	return (
-		<td className="table--body w-[35px] pl-2 sm:pl-6">
-			<Star
-				className={`w-6 ${
-					userCurrency?.some((item) => item === currencyId)
-						? 'fill-purple-neko'
-						: 'fill-[none]'
-				}`}
-				onClick={(e) => {
-					e.preventDefault();
-
-					if (userCurrency?.some((currency) => currency === currencyId)) {
-						setPortfolio({ type: 'REMOVE_COIN', payload: currencyId });
-						return;
-					}
-					setPortfolio({ type: 'ADD_COIN', payload: currencyId });
-				}}
-				data-crypto={currencyId}
-				data-testid="favorite-crypto"
-			/>
-		</td>
-	);
-};
-
 const CurrencyChild = ({ currency }: { currency: Currency }) => {
 	return (
 		<tr className="table--body__line pt-4">
-			<StarPortfolioCurrency currencyId={currency.id} />
+			<td className="table--body w-[35px] pl-2 sm:pl-6">
+				<StarPortfolioCurrency currencyId={currency.id} />
+			</td>
+
 			<ColumnCurrencyInfoGrid currency={currency} />
 			<ColumnMoneyFormatter
 				classNames={'table--body overflow-scroll sm:overflow-auto'}

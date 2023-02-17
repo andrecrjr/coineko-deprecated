@@ -29,3 +29,17 @@ export type PortfolioType = {
 	userCurrency: string[] | null;
 	setPortfolio: Dispatch<{ type: string; payload: string }>;
 };
+
+export type CurrencyItem = {
+	id: string;
+	name: string;
+	api_symbol: string;
+	symbol: string;
+	market_cap_rank: number;
+	thumb: string;
+	large: string;
+};
+
+export type searchType = {
+	coins: CurrencyItem[];
+};
