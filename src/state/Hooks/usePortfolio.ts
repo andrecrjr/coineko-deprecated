@@ -14,7 +14,7 @@ export const useGetPortfolio = () => {
 		portfolioFilterQuery:
 			(userCurrency &&
 				userCurrency?.length > 0 &&
-				`coins/markets?vs_currency=usd&ids=${portfolioFilter}&order=market_cap_desc&per_page=100&page=1&sparkline=true`) ||
+				`coins/markets?vs_currency=usd&ids=${portfolioFilter}&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C24h%2C7d`) ||
 			'',
 		portfolioItens: userCurrency
 	};

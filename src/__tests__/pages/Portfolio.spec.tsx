@@ -16,14 +16,14 @@ vi.mock('axios', async () => {
 				const apiFilterUrl: string = baseURL + url;
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbitcoin%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbitcoin%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C24h%2C7d'
 					)
 				) {
 					return { data: portfolioMock };
 				}
 				if (
 					apiFilterUrl.includes(
-						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true'
+						'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum%2Cbanano&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C24h%2C7d'
 					)
 				) {
 					return { data: portfolioRemovedMock };
@@ -97,5 +97,30 @@ describe('Portfolio page', () => {
 		await waitFor(() => ({}));
 		expect(screen.queryByText(/Bitcoin/i)).toBeNull();
 		expect(screen.queryByText(/Banano/i)).not.toBeNull();
+	});
+
+	it('should render 24h percentage for currency in portfolio', async () => {
+		vi.spyOn(storageObject, 'get').mockReturnValue([
+			'ethereum',
+			'bitcoin',
+			'banano'
+		]);
+		render(
+			<ContainerWrapper>
+				<PortfolioPage />
+			</ContainerWrapper>
+		);
+		const bananoPercent1h = await screen.findByLabelText(
+			'percentage 1h in Banano'
+		);
+		const btcPercent1h = await screen.findByLabelText(
+			'percentage 1h in Bitcoin'
+		);
+		const ethPercent1h = await screen.findByLabelText(
+			'percentage 1h in Ethereum'
+		);
+		expect(bananoPercent1h.textContent).toBe('0.37%');
+		expect(btcPercent1h.textContent).toBe('-0.11%');
+		expect(ethPercent1h.textContent).toBe('-0.18%');
 	});
 });

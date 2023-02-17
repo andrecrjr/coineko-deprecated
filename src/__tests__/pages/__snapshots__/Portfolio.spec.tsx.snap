@@ -133,25 +133,26 @@ HTMLCollection [
             <p
               class="flex"
             >
-              $23,594.00
+              $23,665.00
             </p>
           </td>
           <td
+            aria-label="percentage 1h in Bitcoin"
             class="table--body  text-red-600"
           >
-            0.00
+            -0.11
             %
           </td>
           <td
             class="table--body  text-red-600"
           >
-            -2.10
+            -3.57
             %
           </td>
           <td
-            class="table--body  text-red-600"
+            class="table--body  text-green-500"
           >
-            0.00
+            8.45
             %
           </td>
           <td
@@ -160,7 +161,7 @@ HTMLCollection [
             <p
               class="flex"
             >
-              $454,455,112,980.00
+              $457,316,371,422.00
             </p>
           </td>
           <td
@@ -232,25 +233,26 @@ HTMLCollection [
             <p
               class="flex"
             >
-              $1,649.52
+              $1,654.98
             </p>
           </td>
           <td
+            aria-label="percentage 1h in Ethereum"
             class="table--body  text-red-600"
           >
-            0.00
+            -0.18
             %
           </td>
           <td
             class="table--body  text-red-600"
           >
-            -1.98
+            -1.29
             %
           </td>
           <td
-            class="table--body  text-red-600"
+            class="table--body  text-green-500"
           >
-            0.00
+            7.02
             %
           </td>
           <td
@@ -259,7 +261,7 @@ HTMLCollection [
             <p
               class="flex"
             >
-              $198,818,676,399.00
+              $199,782,476,321.00
             </p>
           </td>
           <td
@@ -293,7 +295,7 @@ HTMLCollection [
             class="table--body text-left
  text-dark-purple-neko font-bold overflow-scroll sm:overflow-auto pl-3 "
           >
-            1011
+            1042
           </td>
           <td
             class="table--body table--body__coin"
@@ -335,21 +337,22 @@ HTMLCollection [
             </p>
           </td>
           <td
-            class="table--body  text-red-600"
+            aria-label="percentage 1h in Banano"
+            class="table--body  text-green-500"
           >
-            0.00
+            0.37
             %
           </td>
           <td
-            class="table--body  text-red-600"
+            class="table--body  text-green-500"
           >
-            -3.79
+            0.41
             %
           </td>
           <td
-            class="table--body  text-red-600"
+            class="table--body  text-green-500"
           >
-            0.00
+            2.99
             %
           </td>
           <td
@@ -358,7 +361,7 @@ HTMLCollection [
             <p
               class="flex"
             >
-              $8,458,938.00
+              $8,474,695.00
             </p>
           </td>
           <td

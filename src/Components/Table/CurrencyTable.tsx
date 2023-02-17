@@ -64,6 +64,7 @@ const CurrencyChild = ({ currency }: { currency: Currency }) => {
 
 			<ColumnPercentageCurrency
 				currencyNumber={currency?.price_change_percentage_1h_in_currency}
+				role={`percentage 1h in ${currency.name}`}
 			/>
 			<ColumnPercentageCurrency
 				currencyNumber={currency && currency?.market_cap_change_percentage_24h}
@@ -116,15 +117,18 @@ const ColumnMoneyFormatter = ({
 };
 
 const ColumnPercentageCurrency = ({
-	currencyNumber
+	currencyNumber,
+	role
 }: {
 	currencyNumber: number | undefined;
+	role?: string;
 }) => {
 	return (
 		<td
 			className={`table--body  ${
 				currencyNumber && currencyNumber > 0 ? 'text-green-500' : 'text-red-600'
 			}`}
+			aria-label={role}
 		>
 			{(currencyNumber && currencyNumber.toFixed(2)) || '0.00'}%
 		</td>
