@@ -33,10 +33,13 @@
 	.table--body__line:last-child {
 		@apply border-b-[24px] border-[transparent];
 	}
+	.search{
+		@apply relative;
+	}
 	.search--box{
-		@apply w-full sm:w-6/12 mb-3 mt-3;
+		@apply w-full mb-3 mt-3 p-3 pr-14;
 	}
 	.suggest--box{
-		@apply absolute bg-white w-full z-10;
+		@apply absolute h-60 sm:h-52  bg-white w-full z-10 overflow-scroll overflow-x-hidden;
 	}
 }

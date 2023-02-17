@@ -26,7 +26,10 @@ export const AutoComplete = ({ searchParam }: { searchParam: string }) => {
 
 const AutoCompleteItem = ({ currency }: { currency: CurrencyItem }) => {
 	return (
-		<div className="grid grid-cols-[25px_auto_auto] my-8 sm:my-3 mx-5 items-center">
+		<div
+			className="grid grid-cols-[25px_auto_auto] 
+						my-8 sm:my-3 mx-5 items-center"
+		>
 			<StarPortfolioCurrency currencyId={currency.id} />
 			<img src={currency.thumb} className="ml-4" width="25" height="25" />
 			<h3 className="text-sm break-before-auto overflow-hidden ml-4">

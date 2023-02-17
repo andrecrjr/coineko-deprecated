@@ -39,27 +39,31 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
         </svg>
       </h1>
       <form
-        class="relative w-full"
+        aria-label="on this page"
+        class="search"
+        role="search"
       >
         <input
           aria-label="search"
           class="search--box"
           placeholder="Search Currency or Exchange"
-          role="combobox"
+          role="searchbox"
           type="text"
           value=""
         />
         <button
-          class="absolute top-0 right-0"
+          class="absolute top-0 right-0 bottom-0 pr-5"
+          role="button"
+          tabindex="1"
           type="submit"
         >
           <svg
             fill="currentColor"
-            height="1em"
+            height="25"
             stroke="currentColor"
             stroke-width="0"
             viewBox="0 0 24 24"
-            width="1em"
+            width="25"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -74,8 +78,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
       </form>
     </section>
     <nav
-      class="w-full bg-purple-neko overflow-x-scroll 
- h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
+      class="w-full bg-purple-neko overflow-x-scroll  h-8 sm:h-10 flex content-center sm:justify-center sm:overflow-auto"
     >
       <ul
         class="list-none flex self-center "
@@ -84,7 +87,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-cryptocurrency"
           >
             Cryptocurrency
@@ -94,7 +98,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/nft"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-nft"
           >
             NFT
@@ -104,7 +109,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/de-fi"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-defi"
           >
             DeFi
@@ -114,7 +120,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/exchange"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-exchange"
           >
             Exchange
@@ -124,7 +131,8 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           href="/portfolio"
         >
           <li
-            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto"
+            class="text-sm pr-10 leading-5 first:pl-4 last:pr-4 font-roboto 
+                        false text-white "
             data-testid="button-portfolio"
           >
             Portfolio
