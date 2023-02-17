@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { CurrencyItem, searchType } from 'src/Types';
 import { useFetch } from 'src/state/Hooks/useSWR';
 import { StarPortfolioCurrency } from '../Table/Star';

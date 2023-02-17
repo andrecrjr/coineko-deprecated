@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { AutoComplete } from './Autocomplete';
-import { MdClear, MdClearAll, MdSearch } from 'react-icons/md';
+import { MdClear, MdSearch } from 'react-icons/md';
 
 export const SearchBar = () => {
 	const [search, setSearch] = useState('');

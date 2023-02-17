@@ -1,8 +1,5 @@
-import { MenuOptions } from './menu';
 import Cat from '../../assets/cat.svg?component';
-import { Link } from 'react-router-dom';
-import { memo, useContext } from 'react';
-import { PaginationContext } from 'src/state/Contexts';
+import { memo } from 'react';
 import { SearchBar } from './SearchBar';
 import Menu from './Menu';
 
