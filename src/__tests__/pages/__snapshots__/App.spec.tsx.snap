@@ -8,7 +8,7 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
     class="flex flex-col items-center"
   >
     <section
-      class="sm:ml-4 sm:py-2 flex w-10/12 justify-between flex-col sm:flex-row"
+      class="sm:ml-4 sm:py-2 flex w-10/12 justify-between flex-col sm:flex-row relative"
     >
       <h1
         class="text-4xl flex items-center"
@@ -38,6 +38,21 @@ exports[`Main App test > should snap all cryptos in home 1`] = `
           />
         </svg>
       </h1>
+      <p
+        class="absolute text-xs bottom-0"
+      >
+        All cryptocurrency data provided by
+         
+        <strong>
+          <a
+            href="http://coingecko.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Coingecko
+          </a>
+        </strong>
+      </p>
       <form
         aria-label="on this page"
         class="search"

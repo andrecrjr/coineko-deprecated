@@ -81,8 +81,8 @@ const CurrencyChild = ({ currency }: { currency: Currency }) => {
 					<Sparkline
 						datasetSpark={currency?.sparkline_in_7d.price}
 						color={
-							currency?.price_change_percentage_1h_in_currency &&
-							currency?.price_change_percentage_1h_in_currency > 0
+							currency?.price_change_percentage_7d_in_currency &&
+							currency?.price_change_percentage_7d_in_currency > 0
 								? 'green'
 								: 'red'
 						}
